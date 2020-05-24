@@ -1,0 +1,408 @@
+2020-05-24 17:57:16,294 werkzeug     WARNING   * Debugger is active!
+2020-05-24 17:57:16,303 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:09:37,192 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-24 18:09:37,196 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:09:37,565 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:09:37,577 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:09:46,898 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:46] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+2020-05-24 18:09:57,953 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2020-05-24 18:09:58,008 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+2020-05-24 18:09:58,017 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:09:58,036 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-24 18:09:58,049 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:09:58,108 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,194 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,194 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,195 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,200 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,204 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,285 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,305 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,310 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,311 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,312 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,315 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,318 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,617 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,619 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[37mGET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1[0m" 200 -
+2020-05-24 18:09:58,674 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:09:58,703 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:09:58] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:10:07,462 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:10:07,480 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:10:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+2020-05-24 18:10:07,491 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:10:07] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-24 18:10:32,476 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/views.py', reloading
+2020-05-24 18:10:32,536 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:10:33,350 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:10:33,368 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:10:39,487 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/views.py', reloading
+2020-05-24 18:10:39,543 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:10:39,869 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:10:39,877 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:10:50,091 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/views.py', reloading
+2020-05-24 18:10:50,145 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:10:51,039 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:10:51,051 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:11:09,369 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/forms.py', reloading
+2020-05-24 18:11:09,412 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:11:09,808 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:11:09,816 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:11:13,914 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/forms.py', reloading
+2020-05-24 18:11:13,998 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:11:14,500 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:11:14,514 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:11:23,698 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/forms.py', reloading
+2020-05-24 18:11:23,746 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:11:24,144 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:11:24,153 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:11:27,243 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/auth/forms.py', reloading
+2020-05-24 18:11:27,290 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:11:27,803 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:11:27,820 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:11:34,393 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2020-05-24 18:11:34,417 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:11:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2020-05-24 18:11:34,430 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:11:34,488 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:11:34] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:11:34,800 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:11:34,821 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:11:34] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:12:35,624 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:12:35,683 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:12:35] "[37mGET /notifyedit HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,330 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:20,410 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,472 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,495 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,497 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,499 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,504 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,504 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,518 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,521 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,523 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,523 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,671 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,675 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,676 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,683 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,683 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,686 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,700 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,708 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,720 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,721 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,728 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,793 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,794 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[37mGET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1[0m" 200 -
+2020-05-24 18:14:20,958 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:20,977 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:20] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:14:21,401 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:21,422 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:14:22,959 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:22,978 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:22] "[37mGET /notifyedit HTTP/1.1[0m" 200 -
+2020-05-24 18:14:24,957 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:24,975 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:14:25,008 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:14:25,037 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:25] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:14:27,229 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:27,246 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:27] "[37mGET /notifyedit HTTP/1.1[0m" 200 -
+2020-05-24 18:14:29,043 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:29,060 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:14:29,065 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:14:29,069 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:29] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:14:30,839 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:30,854 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:30] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:14:31,068 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:31,104 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:31] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:14:36,072 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:36,090 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:36] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:14:36,297 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:14:36,323 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:14:36] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:16:02,530 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:16:02,544 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,580 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,599 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,607 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,609 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,616 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,635 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,642 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,647 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,649 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,650 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,720 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,722 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,722 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,724 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,727 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,730 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,792 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,793 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,795 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,796 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,800 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,864 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,864 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[37mGET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1[0m" 200 -
+2020-05-24 18:16:02,962 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:16:02,990 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:02] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:16:03,160 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:16:03,177 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:16:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:17:11,081 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:17:11,107 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,151 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,176 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,183 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,186 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,187 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,193 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,201 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,211 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,215 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,216 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,328 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,336 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,336 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,345 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,349 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,351 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,361 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,371 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,377 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,387 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,396 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,489 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,490 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:17:11,585 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:17:11,610 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2020-05-24 18:17:11,789 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:17:11,805 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:17:16,798 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:17:16,832 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:17:16] "[37mGET /notifyedit HTTP/1.1[0m" 200 -
+2020-05-24 18:17:29,520 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:17:29,583 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:17:30,487 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:17:30,499 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:17:39,698 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:17:39,745 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:17:40,109 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:17:40,117 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:17:47,251 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:17:47,303 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:17:47,871 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:17:47,882 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:17:53,999 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:17:54,056 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:17:54,691 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:17:54,701 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:03,867 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:03,932 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:04,304 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:04,319 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:11,545 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:11,595 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:12,468 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:12,486 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:21,674 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:21,751 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:22,399 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:22,410 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:27,529 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:27,574 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:27,981 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:28,063 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:36,286 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:36,375 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:36,846 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:36,858 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:41,947 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:42,000 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:42,498 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:42,509 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:45,581 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:45,713 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:46,347 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:46,356 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:18:52,508 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:18:52,596 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:18:53,003 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:18:53,034 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:01,213 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:19:01,282 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:01,866 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:01,882 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:07,031 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:19:07,082 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:07,527 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:07,535 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:09,585 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/forms.py', reloading
+2020-05-24 18:19:09,628 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:09,984 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:09,993 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:11,852 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:19:11,956 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:11] "[37mGET /notifyedit HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,038 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,043 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,044 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,049 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,053 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,055 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,065 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,079 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,081 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,081 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,231 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,232 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,238 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,241 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,247 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,250 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,265 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,280 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,280 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,287 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,292 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:19:12,413 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:12] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:19:13,250 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:19:13,274 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:19:20,195 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:19:20,206 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:19:20,212 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:19:20,229 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:19:20] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:19:40,601 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:19:40,660 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:41,712 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:41,721 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:45,830 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:19:45,900 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:46,291 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:46,303 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:51,431 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:19:51,476 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:52,015 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:52,025 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:54,070 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:19:54,127 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:19:54,549 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:19:54,562 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:19:59,667 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:19:59,720 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:00,343 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:00,353 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:11,555 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:11,613 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:12,059 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:12,069 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:18,182 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:18,244 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:18,810 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:18,830 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:25,979 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:26,025 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:26,439 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:26,448 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:31,555 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:31,599 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:31,925 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:31,932 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:38,048 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:38,153 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:38,562 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:38,571 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:41,650 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:41,741 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:42,267 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:42,276 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:46,370 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:46,472 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:46,964 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:46,974 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:52,083 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:52,163 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:52,738 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:52,748 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:20:57,853 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:20:57,905 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:20:58,423 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:20:58,431 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:08,667 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:21:08,752 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:21:09,202 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:21:09,213 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:17,387 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:21:17,453 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:21:17,990 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:21:18,000 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:20,051 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:21:20,173 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:21:20,623 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:21:20,639 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:27,808 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:21:27,903 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:21:28,371 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:21:28,380 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:35,538 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/main/views.py', reloading
+2020-05-24 18:21:35,592 werkzeug     INFO      * Restarting with stat
+2020-05-24 18:21:36,502 werkzeug     WARNING   * Debugger is active!
+2020-05-24 18:21:36,519 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-24 18:21:37,565 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:21:37,581 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:21:37,586 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:21:37,648 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:21:37] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,402 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:01,420 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:23:01,424 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:23:01,458 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,511 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,531 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,532 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,533 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,533 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,544 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,555 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,559 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,560 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,562 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,708 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,716 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,719 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,723 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,726 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,728 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,765 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,766 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,766 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,774 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,775 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:23:01,851 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:01] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:23:02,491 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:02,514 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:23:17,930 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:17] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,091 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:42,103 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2020-05-24 18:23:42,108 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2020-05-24 18:23:42,147 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /notifylist HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,192 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,228 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,231 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,232 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,232 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,233 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,241 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,250 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,253 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/css/global.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,255 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,392 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,394 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,412 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,413 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,415 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,418 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,470 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,473 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,491 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,492 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/images/avatar.jpg HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,492 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/js/global.js HTTP/1.1[0m" 200 -
+2020-05-24 18:23:42,636 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:42] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+2020-05-24 18:23:43,445 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:43,469 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-24 18:23:44,549 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:44,574 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:44] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-24 18:23:45,161 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-24 18:23:45,178 werkzeug     INFO     127.0.0.1 - - [24/May/2020 18:23:45] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
