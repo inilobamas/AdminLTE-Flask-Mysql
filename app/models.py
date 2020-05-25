@@ -2,7 +2,7 @@
 
 from peewee import MySQLDatabase, Model, CharField, BooleanField, IntegerField, DateTimeField
 import json
-from werkzeug.security import check_password_hash
+from werkzeug.security import check_password_hash, generate_password_hash
 from flask_login import UserMixin
 from app import login_manager
 from conf.config import config
@@ -44,6 +44,9 @@ class User(UserMixin, BaseModel):
 
     def verify_password(self, raw_password):
         return check_password_hash(self.password, raw_password)
+
+    def generate_password(self, password):
+        return generate_password_hash(password)
 
 
 # Notifier Configuration

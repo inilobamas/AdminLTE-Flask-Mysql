@@ -12,14 +12,20 @@
             <div class="card-header bg-transparent pb-5">
 
               <div class="text-muted text-center mt-2 mb-3">
-
-                {% if msg %}
-                  <span class="text-danger">{{ msg | safe }}</span>
-                {% else %}
-                  Register
-                {% endif %}
-
+                Daftar sebagai Admin
               </div>
+
+              {% with messages = get_flashed_messages(with_categories=true) %}
+              <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <!-- <strong>Title</strong> --> {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
 
             </div>
             <div class="card-body px-lg-5 py-lg-5">
@@ -42,7 +48,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                       </div>
-                      {{ form.username(placeholder="Username",class="form-control") }}
+                      {{form.username(class_="form-control",placeholder="username")}}
                     </div>
                   </div>
                   <div class="form-group mb-3">
@@ -50,7 +56,15 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                       </div>
-                      {{ form.email(placeholder="Email",class="form-control") }}
+                      {{form.email(class_="form-control",placeholder="email")}}
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-folder-17"></i></span>
+                      </div>
+                      {{ form.fullname(placeholder="nama",class_="form-control") }}
                     </div>
                   </div>
                   <div class="form-group">
@@ -58,12 +72,28 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                       </div>
-                      {{ form.password(placeholder="Password",class="form-control",type="password") }}
+                      {{ form.password(placeholder="kata sandi",class_="form-control",type="password") }}
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+                      </div>
+                      {{ form.phone(placeholder="no telfon",class_="form-control") }}
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-istanbul"></i></span>
+                      </div>
+                      {{ form.address(placeholder="alamat",class_="form-control") }}
                     </div>
                   </div>
 
                   <div class="text-center">
-                    <button type="submit" name="register" class="btn btn-primary my-4">Register</button>
+                    <button type="submit" name="register" class="btn btn-primary my-4">Daftar</button>
                   </div>
                 </form>
               {% endif %}
@@ -72,7 +102,7 @@
           </div>
           <div class="row mt-3 text-center">
             <div class="col-12">
-              <a href='{{ url_for("auth.login") }}' class="text-light"><small>Login</small></a>
+              <a href='{{ url_for("auth.login") }}' class="text-light"><small>Masuk</small></a>
             </div>
           </div>
         </div>

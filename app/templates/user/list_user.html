@@ -1,0 +1,388 @@
+{% extends "base_site.html" %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include "site_template/navigation.html" %}
+
+  {% include "site_template/top-stats.html" %}
+
+    <div class="container-fluid mt--7">
+
+      <!-- Table -->
+      <div class="row">
+            <div class="col">
+
+            <div class="" role="alert" id="alert_user">
+            </div>
+
+              <div class="card shadow">
+                <div class="card-header border-0">
+                  <h3 class="mb-0" id="left">Daftar Pengguna</h3>
+                  <a data-toggle="modal" data-target="#addModalUser"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>
+                </div>
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                      <th scope="col">Username</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">No Telfon</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Akses</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <!--          Start List          -->
+                    <!-- For loop logic of jinja template -->
+                      {%for i in range(0, len_list)%}
+                      <tr>
+                        <th scope="row">
+                          <div class="media align-items-center">
+                            <div class="media-body">
+                              <span class="mb-0 text-sm">{{list_user[i].username}}</span>
+                            </div>
+                          </div>
+                        </th>
+                          <td>
+                          {{list_user[i].fullname}}
+                        </td>
+                        <td>
+                          {{list_user[i].address}}
+                        </td>
+                        <td>
+<!--                          <span class="badge badge-dot mr-4">-->
+<!--                            <i class="bg-warning"></i> pending-->
+<!--                          </span>-->
+                          {{list_user[i].phone}}
+                        </td>
+                        <td>
+                          {{list_user[i].email}}
+                        </td>
+                        <td>
+                          {{list_user[i].role}}
+                        </td>
+                        <td class="text-right">
+                          <div class="dropdown">
+                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                              <a class="dropdown-item" href="#">Lihat</a>
+
+                                {% if (current_user.role == "superadmin") or (list_user[i].username == current_user.username) %}
+                                    <a data-id={{list_user[i].id}} onclick="EditUser(this)" data-toggle="modal" data-target="#editModalUser" class="dropdown-item">Ubah</a>
+                                {% endif %}
+
+                                {% if (current_user.role == "superadmin") %}
+                                    <a data-id={{list_user[i].id}} onclick="ConfirmDeleteUser(this)" data-toggle="modal" data-target="#deleteModalUser" class="dropdown-item">Hapus</a>
+                                {% endif %}
+
+
+                                {% if (list_user[i].role == "member") %}
+                                    <a class="dropdown-item" href="#">Piutang</a>
+                                {% endif %}
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      {%endfor%}
+                    <!--          End List          -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer py-4">
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end mb-0">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="" tabindex="-1">
+                          <i class="fas fa-angle-left"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="">All</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="">
+                          <i class="fas fa-angle-right"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        {% include "site_template/footer.html" %}
+
+    </div>
+
+<!-- Add Modal User -->
+<div class="modal fade" id="addModalUser" tabindex="-1" role="dialog" aria-labelledby="addModalUserLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
+                </button>
+                <h4 class="modal-title" id="addModalUserLabel">Tambah Pengguna</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="recipient-username" class="control-label">Username:</label>
+                        <input type="text" class="form-control" id="addUsername">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Nama:</label>
+                        <input type="text" class="form-control" id="addFullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-address" class="control-label">Alamat:</label>
+                        <textarea class="form-control" id="addAddress"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-phone" class="control-label">No Telfon:</label>
+                        <input class="form-control" id="addPhone"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-email" class="control-label">Email:</label>
+                        <input class="form-control" id="addEmail"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-role" class="control-label">Akses:</label>
+                        <select name="addRole" id="addRole" class="form-control">
+                          <option value="admin">Admin</option>
+                          <option value="member">Member</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button onclick="InsertUser()" type="button" id="btnAddUser" class="btn btn-primary">Tambah</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  Edit Modal User  -->
+<div class="modal fade" id="editModalUser" tabindex="-1" role="dialog" aria-labelledby="editModalUserLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
+                </button>
+                <h4 class="modal-title" id="editModalUserLabel">Ubah Pengguna</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="recipient-username" class="control-label">Username:</label>
+                        <input type="text" class="form-control" id="editUsername">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Nama:</label>
+                        <input type="text" class="form-control" id="editFullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-address" class="control-label">Alamat:</label>
+                        <textarea class="form-control" id="editAddress"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-phone" class="control-label">No Telfon:</label>
+                        <input class="form-control" id="editPhone"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-email" class="control-label">Email:</label>
+                        <input class="form-control" id="editEmail"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-role" class="control-label">Akses:</label>
+                        <input class="form-control" id="editRole" disabled></input>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button type="button" onclick="UpdateUser()" class="btn btn-primary">Ubah</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal User -->
+<div class="modal fade" id="deleteModalUser" tabindex="-1" role="dialog" aria-labelledby="deleteModalUserLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+<!--            <div class="modal-header" style="text-align:center;">-->
+<!--                <h4 class="modal-title" style="color:red;" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h4>-->
+<!--            </div>-->
+                <div class="card-header border-0">
+                  <h3 class="mb-0" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h3>
+                </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" onclick="DeleteUser()">Hapus</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+#left
+{
+    width:10%;
+    float:left;
+}
+#right
+{
+    width:90%;
+    float:right;
+}
+</style>
+
+<script>
+function EditUser(elm){
+		localStorage.setItem('editUserID',$(elm).attr('data-id'));
+		$.ajax({
+			url : '/getUserByID',
+			data : {id:$(elm).attr('data-id')},
+			type : 'POST',
+			success: function(res){
+				$('#editUsername').val(res.username);
+				$('#editFullname').val(res.fullname);
+				$('#editAddress').val(res.address);
+				$('#editPhone').val(res.phone);
+				$('#editEmail').val(res.email);
+				$('#editRole').val(res.role);
+
+				$('#editModalUser').modal();
+
+
+
+
+			},
+			error: function(error){
+				console.log(error);
+			}
+		});
+	}
+
+function ConfirmDeleteUser(elm){
+    localStorage.setItem('deleteUserID', $(elm).attr('data-id'));
+    $('#deleteModal').modal();
+}
+
+<!-- API -->
+function InsertUser() {
+    $.ajax({
+        url: '/insertUser',
+        data: {
+            username: $('#addUsername').val(),
+            fullname: $('#addFullname').val(),
+            address: $('#addAddress').val(),
+            phone: $('#addPhone').val(),
+            email: $('#addEmail').val(),
+            role: $('#addRole').val(),
+            password: $('#addUsername').val()
+        },
+        type: 'POST',
+        success: function(res) {
+            console.log("RES", res)
+            $('#addModalUser').modal('hide');
+
+            // Change Warning Text Manual
+            var element = document.getElementById("alert_user");
+            element.className += " alert";
+            element.className += " alert-dismissable";
+            element.className += " alert-" + res['status'];
+
+            element.innerHTML += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+            element.innerHTML += res['message'];
+
+            // Re populate the grid
+            setTimeout(function(){
+                location.reload();
+             }, 1000);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    })
+}
+
+function UpdateUser() {
+    $.ajax({
+        url: '/updateUser',
+        data: {
+            username: $('#editUsername').val(),
+            fullname: $('#editFullname').val(),
+            address: $('#editAddress').val(),
+            phone: $('#editPhone').val(),
+            email: $('#editEmail').val(),
+            role: $('#editRole').val(),
+            id: localStorage.getItem('editUserID')
+        },
+        type: 'POST',
+        success: function(res) {
+            console.log("RES", res)
+            $('#editModalUser').modal('hide');
+
+            // Change Warning Text Manual
+            var element = document.getElementById("alert_user");
+            element.className += " alert";
+            element.className += " alert-dismissable";
+            element.className += " alert-" + res['status'];
+
+            element.innerHTML += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+            element.innerHTML += res['message'];
+
+            // Re populate the grid
+            setTimeout(function(){
+                location.reload();
+             }, 1000);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    })
+}
+
+function DeleteUser() {
+    $.ajax({
+        url: '/deleteUserByID',
+        data: {
+            id: localStorage.getItem('deleteUserID')
+        },
+        type: 'POST',
+        success: function(res) {
+            console.log("success");
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+}
+</script>
+
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super() }}
+
+{% endblock javascripts %}

@@ -12,19 +12,28 @@
             <div class="card-header bg-transparent pb-5">
 
               <div class="text-muted text-center mt-2 mb-3">
-              
-                {% if msg %}
-                  <span class="text-danger">{{ msg | safe }}</span>
-                {% else %}
+
                 <span>
-                  Use default credentials: admin / admin
-                  <br />
-                  OR <a href={{ url_for('auth.login') }} >create your own user</a>
+                  Pakai default credentials: admin / admin
+<!--                  <br />-->
+<!--                  OR <a href="{{url_for('auth.register')}}" >create your own admin</a>-->
                 </span>
-                {% endif %}
+                <br>
 
               </div>
-              
+
+              {% with messages = get_flashed_messages(with_categories=true) %}
+              <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <!-- <strong>Title</strong> --> {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+
             </div>
             <div class="card-body px-lg-5 py-lg-5">
 
@@ -45,19 +54,19 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    {{form.password(class_="form-control",placeholder="password")}}
+                    {{form.password(class_="form-control",placeholder="kata sandi")}}
                   </div>
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" name="login" class="btn btn-primary my-4">Sign in</button>
+                  <button type="submit" name="login" class="btn btn-primary my-4">Masuk</button>
                 </div>
               </form>
             </div>
           </div>
           <div class="row mt-3 text-center">
             <div class="col-12">
-              <a href={{ url_for('auth.login') }} class="text-light"><small>Create new account</small></a>
+              <a href="{{url_for('auth.register')}}" class="text-light"><small>Buat admin baru</small></a>
             </div>
           </div>
         </div>

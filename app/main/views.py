@@ -6,6 +6,7 @@ from app import utils
 from app.models import CfgNotify
 from app.main.forms import CfgNotifyForm
 from . import main
+from .forms import SearchForm
 
 logger = get_logger(__name__)
 cfg = get_config()
@@ -22,9 +23,9 @@ def common_list(DynamicModel, view):
     if action == 'del' and id:
         try:
             DynamicModel.get(DynamicModel.id == id).delete_instance()
-            flash('Successfully Deleted')
+            flash('Successfully Deleted', 'success')
         except:
-            flash('Failed to Delete')
+            flash('Failed to Delete', 'danger')
 
     # Query List
     query = DynamicModel.select()
@@ -51,7 +52,7 @@ def common_edit(DynamicModel, form, view):
             if form.validate_on_submit():
                 utils.form_to_model(form, model)
                 model.save()
-                flash('Successfully Modified')
+                flash('Successfully Modified', 'success')
             else:
                 utils.flash_errors(form)
     else:
@@ -60,7 +61,7 @@ def common_edit(DynamicModel, form, view):
             model = DynamicModel()
             utils.form_to_model(form, model)
             model.save()
-            flash('Save Successfully')
+            flash('Save Successfully', 'success')
         else:
             utils.flash_errors(form)
     return render_template(view, form=form, current_user=current_user)
@@ -77,7 +78,8 @@ def root():
 @main.route('/index', methods=['GET'])
 @login_required
 def index():
-    return render_template('index.html', current_user=current_user)
+    form = SearchForm()
+    return render_template('index.html', current_user=current_user, form=form)
 
 
 # Notification Query Method
