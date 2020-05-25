@@ -27,7 +27,7 @@ class BaseModel(Model):
         # return str(r)
         return json.dumps(r, ensure_ascii=False)
 
-
+# User
 class User(UserMixin, BaseModel):
     username = CharField()
     password = CharField()
@@ -47,6 +47,17 @@ class User(UserMixin, BaseModel):
 
     def generate_password(self, password):
         return generate_password_hash(password)
+
+# Product
+class Product(BaseModel):
+    product_code = CharField()
+    product_name = CharField()
+    description = CharField(null=True)
+    price = IntegerField(null=True)
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
 
 
 # Notifier Configuration
