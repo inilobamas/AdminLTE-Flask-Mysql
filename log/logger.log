@@ -6438,3 +6438,654 @@
 2020-05-25 18:02:33,575 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
 2020-05-25 18:02:33,611 werkzeug     INFO     127.0.0.1 - - [25/May/2020 18:02:33] "[37mGET /product HTTP/1.1[0m" 200 -
 2020-05-25 18:02:34,364 werkzeug     INFO     127.0.0.1 - - [25/May/2020 18:02:34] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 18:09:39,582 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/models.py', reloading
+2020-05-25 18:09:39,819 werkzeug     INFO      * Restarting with stat
+2020-05-25 20:05:46,697 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-25 20:05:46,700 werkzeug     INFO      * Restarting with stat
+2020-05-25 20:05:47,124 werkzeug     WARNING   * Debugger is active!
+2020-05-25 20:05:47,134 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-25 20:05:52,593 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:05:52,619 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-25 20:05:52,685 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:52] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,448 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:05:55,462 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-25 20:05:55,469 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,532 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,533 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,542 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,613 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,615 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,617 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,623 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,626 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,629 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,653 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,759 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 20:05:55,760 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:55] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 20:05:56,122 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:56] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 20:05:56,835 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:05:56,857 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:05:56] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 20:06:15,572 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:06:15,609 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:06:15] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 20:06:16,095 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:06:16] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 20:46:23,207 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/__init__.py', reloading
+2020-05-25 20:46:23,292 werkzeug     INFO      * Restarting with stat
+2020-05-25 20:46:24,192 werkzeug     WARNING   * Debugger is active!
+2020-05-25 20:46:24,203 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-25 20:57:56,410 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:57:56,490 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,611 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,616 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,617 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,850 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,854 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,860 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,870 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,874 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,876 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 20:57:56,923 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:56] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 20:57:57,121 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:57] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 20:57:57,125 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:57] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 20:57:57,920 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:57:57] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 20:58:04,787 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:58:04,809 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:58:04,954 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:58:04] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 20:58:04,956 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:58:04] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 20:58:04,983 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 20:58:04,998 werkzeug     INFO     127.0.0.1 - - [25/May/2020 20:58:04] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:07:23,521 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:07:23,551 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,657 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,657 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,658 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,873 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,882 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,893 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,901 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,916 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,920 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:07:23,924 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:23] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:07:24,095 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:24] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:07:24,105 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:24] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:07:24,396 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:07:24,411 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:24] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:07:24,522 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:07:24,527 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:07:24,560 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:24] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:07:24,570 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:24] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:07:25,236 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:07:25] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,173 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:02,198 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,281 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,282 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,285 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,419 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,420 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,429 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,438 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,439 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,444 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,459 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,511 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,521 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:02,678 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:02,701 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:02,789 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:02,807 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:02,940 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:02,956 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:02] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:03,524 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:03] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,286 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:18,310 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,373 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,384 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,386 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,485 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,503 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,513 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,515 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,516 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,518 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,520 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,854 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:18,884 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:18] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:19,085 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:19,107 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:19] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:19,280 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:19,286 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:19,309 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:19] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:19,330 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:19] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:19,953 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:19] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:21,174 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:21,203 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:21] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:08:21,572 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:21,595 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:21] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:21,725 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:21,728 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:21,740 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:21] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:21,753 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:21] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:26,819 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:26,823 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:26,838 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:26] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:26,850 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:26] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:26,865 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:26,888 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:26] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:36,300 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:36,322 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,380 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,406 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,412 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,499 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,502 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,511 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,513 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,519 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,525 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,555 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,744 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,751 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:08:36,859 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:36,892 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:36] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:37,062 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:37,068 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:37,081 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:37] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:37,090 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:37] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:37,816 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:37] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:08:37,905 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:37,937 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:37] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:08:38,405 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:38,430 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:38] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:38,540 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:38,548 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:08:38,563 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:38] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:08:38,573 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:08:38] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:09:12,129 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:09:12,154 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,219 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,227 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,228 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,334 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,335 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,336 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,350 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,351 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,357 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,377 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,577 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,642 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:09:12,813 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:09:12,833 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:12] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:09:13,004 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:09:13,010 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:09:13,038 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:13] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:09:13,047 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:13] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:09:13,818 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:09:13] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,364 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:34,407 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,543 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,547 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,548 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,809 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,813 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,845 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,850 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,853 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,857 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:34,857 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:34] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:35,089 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:11:35,103 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:11:35,237 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:35,252 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:35,335 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:35,340 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:35,358 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:35,373 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:35,845 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:35] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,580 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:39,606 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,677 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,686 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,692 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,789 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,794 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,804 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,807 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,812 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,814 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:39,824 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:39] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:11:40,067 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:40] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:11:40,070 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:40] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:11:40,138 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:40,143 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:40,149 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:11:40,171 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:40] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:40,203 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:40] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:40,241 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:40] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:11:42,170 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:11:42] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,084 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:11,105 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,168 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,169 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,169 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,267 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,276 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,278 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,282 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,285 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,288 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,306 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,482 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,487 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:12:11,584 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:11,605 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:11,702 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:11,721 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:11,733 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:11,746 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:11] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:12,590 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:12] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,271 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:50,307 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,381 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,389 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,401 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,483 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,486 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,497 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,499 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,501 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,511 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,512 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,626 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,638 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:12:50,679 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:50,720 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:50,808 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:50,826 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:50,930 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:12:50,960 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:50] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:12:51,619 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:12:51] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,418 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:08,440 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,513 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,518 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,522 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,652 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,654 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,657 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,662 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,674 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,674 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,683 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,871 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:08,878 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:08] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:09,025 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:09,047 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:09] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:09,171 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:09,176 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:09,190 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:09] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:09,206 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:09] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:09,904 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:09] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:18,861 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:18,897 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:18] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,046 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,049 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,049 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,209 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,212 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,216 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,217 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,218 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,221 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,238 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,395 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,400 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:19,747 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:19,764 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:19,872 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:19,877 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:19,894 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:19,903 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:19] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:20,711 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:20] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,739 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:54,764 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,821 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,824 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,833 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,934 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,937 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,959 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,960 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,966 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:13:54,967 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:54] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:55,009 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:13:55,064 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:55,068 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:13:55,180 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:55,204 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:55,357 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:55,380 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:55,450 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:13:55,471 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:55] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:13:56,227 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:13:56] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,487 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:06,509 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,578 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,585 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,591 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,664 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,673 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,676 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,692 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,695 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,697 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,704 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,922 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:06,923 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:06] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:07,058 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:07,086 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:07] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:07,163 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:07,186 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:07] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:07,266 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:07,295 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:07] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:07,838 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:07] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,408 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:14,428 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,500 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,508 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,514 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,600 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,605 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,607 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,610 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,616 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,620 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,632 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,759 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,778 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:14,860 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:14,884 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:14] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:15,345 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:15,366 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:15] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:15,391 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:15,409 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:15] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:15,723 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:15] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:19,996 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:20,014 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,081 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,089 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,090 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,178 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,192 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,198 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,208 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,209 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,210 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,217 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,390 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,398 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:20,609 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:20,627 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:20,708 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:20,714 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:20,745 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:20,760 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:20] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:21,375 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:21] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,693 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:32,717 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,783 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,786 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,789 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,924 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,925 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,948 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,948 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,954 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,956 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:14:32,956 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:32] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:14:33,152 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:33] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:33,153 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:33] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:14:33,557 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:33,576 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:33] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:33,684 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:33,691 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:14:33,708 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:33] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:33,720 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:33] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:14:34,681 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:14:34] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:13,984 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:14,017 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:14] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,277 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:44,301 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,380 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,380 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,384 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,516 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,520 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,521 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,532 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,537 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,542 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,556 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,720 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,721 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:15:44,848 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:44,877 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:44] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:45,057 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:45,064 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:45,098 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:45] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:45,105 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:45] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:45,824 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:45] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,025 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:50,047 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,143 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,150 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,156 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,271 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,277 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,285 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,300 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,304 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,307 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,313 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,451 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,453 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:15:50,780 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:50,793 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:50,943 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:50,950 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:15:50,963 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:50] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:51,019 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:51] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:15:51,883 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:15:51] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,171 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:02,200 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,267 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,272 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,276 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,426 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,426 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,433 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,437 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,442 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,445 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,456 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,672 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,678 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:02,755 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:02,771 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:02] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:03,079 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:03,085 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:03,102 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:03] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:03,118 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:03] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:03,809 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:03] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:33,946 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:33,979 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:33] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,040 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,041 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,042 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,295 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,305 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,306 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,312 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,315 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,316 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,399 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,500 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,500 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:34,657 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:34,678 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:34,696 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:34,712 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:34] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:35,178 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:35,198 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:35] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:35,551 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:35] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,306 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:42,326 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,391 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,395 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,401 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,543 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,546 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,547 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,556 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,559 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,562 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,583 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,702 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,709 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:16:42,787 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:42,811 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:42,940 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:42,958 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:42] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:43,271 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:16:43,286 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:43] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:16:43,643 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:16:43] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,044 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:07,076 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,138 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,140 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,140 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,342 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,345 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,350 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,356 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,359 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,362 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,380 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,522 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,529 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:17:07,626 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:07,643 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:07] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:08,061 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:08,069 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:08,080 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:08] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:08,096 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:08] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:08,455 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:08] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,139 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:28,159 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,217 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,226 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,228 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,352 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,369 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,369 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,374 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,378 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,386 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,389 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,529 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,530 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:17:28,765 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:28,784 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:28,895 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:28,902 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:17:28,920 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:28,950 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:28] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-25 21:17:29,834 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:17:29] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:04,855 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:04,900 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:04] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,089 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,091 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,091 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,149 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,166 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,167 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,167 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,168 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,171 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,183 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,265 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:05,268 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:05] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:06,051 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:06] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:09,699 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:09,741 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:09] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:10,265 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:10] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,517 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:23,544 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,597 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,607 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,613 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,709 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,715 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,719 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,723 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,726 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,728 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,736 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,861 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:23,863 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:23] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:24,415 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:24] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:25,108 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:25,130 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:25] "[33mGET /list_stock HTTP/1.1[0m" 404 -
+2020-05-25 21:20:27,467 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:27,481 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:27] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-25 21:20:27,490 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:27,517 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:27] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-25 21:20:29,052 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:29,067 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:29] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,088 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:33,100 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,162 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,170 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,171 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,294 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,299 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,310 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,316 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,320 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,326 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,331 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,537 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:33,550 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:33] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-25 21:20:34,090 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:34] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-25 21:20:34,448 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:34,464 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:34] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:36,353 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:36,376 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:36] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:37,944 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:37,980 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:37] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:40,133 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:40,149 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:40] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:44,131 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:44,146 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:44] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-25 21:20:52,344 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-25 21:20:52,378 werkzeug     INFO     127.0.0.1 - - [25/May/2020 21:20:52] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:04:41,856 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:04:41,934 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:04:41] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:05:40,792 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:05:40,851 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:05:40] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:05:41,421 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:05:41] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 06:05:44,975 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:05:44,996 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:05:44] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 06:05:50,301 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:05:50,329 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:05:50] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:05:54,861 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:05:54,880 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:05:54] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 06:06:15,869 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:06:15,901 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:06:15] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 06:06:16,395 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:06:16] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 06:06:17,694 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:06:17,748 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:06:17] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:07:21,307 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 06:07:21,331 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:07:21] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 06:07:21,696 werkzeug     INFO     127.0.0.1 - - [26/May/2020 06:07:21] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 07:03:09,691 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 07:03:09,729 werkzeug     INFO     127.0.0.1 - - [26/May/2020 07:03:09] "[37mGET /stock HTTP/1.1[0m" 200 -

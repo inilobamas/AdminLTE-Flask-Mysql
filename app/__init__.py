@@ -41,4 +41,10 @@ def create_app(config_name):
     from .product import product as product_blueprint
     app.register_blueprint(product_blueprint)
 
+    from .stock import stock as stock_blueprint
+    app.register_blueprint(stock_blueprint)
+
+    from .detail_stock import detail_stock as detail_stock_blueprint
+    app.register_blueprint(detail_stock_blueprint)
+
     return app

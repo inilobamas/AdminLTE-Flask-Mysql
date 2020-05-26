@@ -49,7 +49,7 @@ class User(UserMixin, BaseModel):
         return generate_password_hash(password)
 
 # Product
-class Product(BaseModel):
+class Product(UserMixin, BaseModel):
     product_code = CharField()
     product_name = CharField()
     description = CharField(null=True)
@@ -59,6 +59,27 @@ class Product(BaseModel):
     updated_at = DateTimeField(null=True)
     updated_by = IntegerField(null=True)
 
+# Stock
+class Stock(UserMixin, BaseModel):
+    product_id = CharField()
+    amount = IntegerField(null=True)
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
+# DetailStock
+class DetailStock(UserMixin, BaseModel):
+    stock_id = IntegerField()
+    user_id = IntegerField() # ini siapa yang urus nota maksudnya
+    amount_in = IntegerField() # jika in maka nota pembelian
+    amount_out = IntegerField() # jika out maka nota penjualan
+    amount_balance = IntegerField()
+    start_date = DateTimeField() # kapan dilakukan pembuatan nota
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
 
 # Notifier Configuration
 class CfgNotify(BaseModel):
