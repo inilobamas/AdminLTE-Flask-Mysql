@@ -1,0 +1,204 @@
+{% extends "base_site.html" %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include "site_template/navigation.html" %}
+
+  {% include "site_template/top-stats.html" %}
+
+    <div class="container-fluid mt--7">
+
+      <!-- Table -->
+      <div class="row">
+            <div class="col">
+
+            <div class="" role="alert" id="alert_user">
+            </div>
+
+              <div class="card shadow">
+                <div class="card-header border-0">
+                    <h3 class="mb-0"><a href="/memorandum">Daftar Nota</a> - Tambah Nota Penjualan</h3>
+<!--                  <a data-toggle="modal" data-target="#addModalStok"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>-->
+                </div>
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+<!--                    <tr>-->
+<!--                        <th scope="col">No Nota</th>-->
+<!--                        <th scope="col">NBL-000001</th>-->
+<!--                        <th width="5%" scope="col"></th>-->
+<!--                        <th scope="col">Tanggal</th>-->
+<!--                        <th scope="col">12 Mei 2020</th>-->
+<!--                        <th width="70%" scope="col"></th>-->
+<!--                      </tr>-->
+<!--                      <tr>-->
+<!--                        <th scope="col">No Nota</th>-->
+<!--                        <th scope="col">NBL-000001</th>-->
+<!--                        <th width="5%" scope="col"></th>-->
+<!--                        <th scope="col">Tanggal</th>-->
+<!--                        <th scope="col">12 Mei 2020</th>-->
+<!--                        <th width="70%" scope="col"></th>-->
+<!--                      </tr>-->
+                    <div class="card-body border-0">
+                      <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NJL-000001</h4>
+                      <br>
+                      <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 13 Mei 2020</h4>
+                      <br>
+                      <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> Michael</h4>
+                      <br>
+                      <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a> Jalan Panglima Sudirman Gang 2 No 22. 082257125486</h4>
+                    </div>
+                  </div>
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Produk</th>
+                        <th scope="col">Nama Produk</th>
+                        <th scope="col">Jumlah</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <!--          Start List          -->
+                    <!-- For loop logic of jinja template -->
+                      <tr>
+                        <th scope="row">
+                          <div class="media align-items-center">
+                            <div class="media-body">
+                              <span class="mb-0 text-sm">1</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
+                            </div>
+                          </div>
+                        </th>
+                          <td>
+                          PD-000001
+                        </td>
+                        <td>
+                          Dori 2x5
+                        </td>
+                        <td>
+                          5kg
+                        </td>
+                        <td>
+                          Rp. 50.000
+                        </td>
+                        <td>
+                          Rp.  250.000
+                        </td>
+                        <td class="text-right">
+                            <div class="dropdown">
+                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                              <a class="dropdown-item" href="#">Tambah</a>
+                              <a onclick="ConfirmDeleteProduct()" data-toggle="modal" data-target="#deleteModalMemorandum" class="dropdown-item">Hapus</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    <!--          End List          -->
+
+                    </tbody>
+                    <tfoot class="thead-light">
+                      <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">5kg</th>
+                        <th scope="col"></th>
+                        <th scope="col">Rp.   250.000</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="card-footer py-4">
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end mb-0">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="" tabindex="-1">
+                          <i class="fas fa-angle-left"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="">All</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="">
+                          <i class="fas fa-angle-right"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        {% include "site_template/footer.html" %}
+
+    </div>
+
+<!-- Delete Modal Memorandum -->
+<div class="modal fade" id="deleteModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="deleteModalMemorandumLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+<!--            <div class="modal-header" style="text-align:center;">-->
+<!--                <h4 class="modal-title" style="color:red;" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h4>-->
+<!--            </div>-->
+                <div class="card-header border-0">
+                  <h3 class="mb-0" id="deleteModalProductLabel">Apa anda yakin menghapus data ini?</h3>
+                </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" onclick="">Hapus</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+#left
+{
+    width:10%;
+    float:left;
+}
+#right
+{
+    width:90%;
+    float:right;
+}
+</style>
+<script>
+  function ConfirmDeleteMemorandum(elm){
+<!--    localStorage.setItem('deleteUserID', $(elm).attr('data-id'));-->
+    $('#deleteModalMemorandum').modal();
+}
+</script>
+
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super() }}
+
+{% endblock javascripts %}

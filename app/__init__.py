@@ -47,4 +47,10 @@ def create_app(config_name):
     from .detail_stock import detail_stock as detail_stock_blueprint
     app.register_blueprint(detail_stock_blueprint)
 
+    from .memorandum import memorandum as memorandum_blueprint
+    app.register_blueprint(memorandum_blueprint)
+
+    from .detail_memorandum import detail_memorandum as detail_memorandum_blueprint
+    app.register_blueprint(detail_memorandum_blueprint)
+
     return app

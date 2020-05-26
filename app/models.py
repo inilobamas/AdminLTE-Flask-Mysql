@@ -81,6 +81,29 @@ class DetailStock(UserMixin, BaseModel):
     updated_at = DateTimeField(null=True)
     updated_by = IntegerField(null=True)
 
+# Memorandum
+class Memorandum(UserMixin, BaseModel):
+    memo_number = CharField()
+    memo_date = DateTimeField()
+    user_id = IntegerField()
+    description = CharField(null=True)
+    status = IntegerField() # 1 = pembelian 2 = penjualan
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
+# Detail Memorandum
+class DetailMemorandum(UserMixin, BaseModel):
+    memo_id = IntegerField()
+    product_id = IntegerField()
+    amount = IntegerField() # 10
+    unit = CharField() # kg, liter
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
 # Notifier Configuration
 class CfgNotify(BaseModel):
     check_order = IntegerField()  # Sort
