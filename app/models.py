@@ -104,6 +104,20 @@ class DetailMemorandum(UserMixin, BaseModel):
     updated_at = DateTimeField(null=True)
     updated_by = IntegerField(null=True)
 
+# User Account (Kartu Piutang)
+class UserAccount(UserMixin, BaseModel):
+    user_id = IntegerField()
+    memo_id = IntegerField()
+    debit = IntegerField(null=True)
+    credit = IntegerField(null=True)
+    balance = IntegerField(null=True) # not yet paid
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
+
+
 # Notifier Configuration
 class CfgNotify(BaseModel):
     check_order = IntegerField()  # Sort

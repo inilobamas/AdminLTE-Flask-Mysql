@@ -38,6 +38,9 @@ def create_app(config_name):
     from .user import user as user_blueprint
     app.register_blueprint(user_blueprint)
 
+    from .user_account import user_account as user_account_blueprint
+    app.register_blueprint(user_account_blueprint)
+
     from .product import product as product_blueprint
     app.register_blueprint(product_blueprint)
 
