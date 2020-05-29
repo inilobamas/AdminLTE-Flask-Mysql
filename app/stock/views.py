@@ -1,6 +1,5 @@
 from flask import render_template, redirect, request, url_for, flash
 from . import stock
-from app.product import product
 from .forms import SearchForm
 from app.models import Stock
 from flask_login import login_required, current_user
