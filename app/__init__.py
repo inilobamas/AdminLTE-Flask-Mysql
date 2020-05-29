@@ -29,31 +29,31 @@ def create_app(config_name):
 
     login_manager.init_app(app)
 
-    from .main import main as main_blueprint
+    from app.controller.main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    from .auth import auth as auth_blueprint
+    from app.controller.auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
 
-    from .user import user as user_blueprint
+    from app.controller.user import user as user_blueprint
     app.register_blueprint(user_blueprint)
 
-    from .user_account import user_account as user_account_blueprint
+    from app.controller.user_account import user_account as user_account_blueprint
     app.register_blueprint(user_account_blueprint)
 
-    from .product import product as product_blueprint
+    from app.controller.product import product as product_blueprint
     app.register_blueprint(product_blueprint)
 
-    from .stock import stock as stock_blueprint
+    from app.controller.stock import stock as stock_blueprint
     app.register_blueprint(stock_blueprint)
 
-    from .detail_stock import detail_stock as detail_stock_blueprint
+    from app.controller.detail_stock import detail_stock as detail_stock_blueprint
     app.register_blueprint(detail_stock_blueprint)
 
-    from .memorandum import memorandum as memorandum_blueprint
+    from app.controller.memorandum import memorandum as memorandum_blueprint
     app.register_blueprint(memorandum_blueprint)
 
-    from .detail_memorandum import detail_memorandum as detail_memorandum_blueprint
+    from app.controller.detail_memorandum import detail_memorandum as detail_memorandum_blueprint
     app.register_blueprint(detail_memorandum_blueprint)
 
     return app

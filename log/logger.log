@@ -8749,3 +8749,975 @@
 2020-05-26 17:01:51,855 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
 2020-05-26 17:01:51,869 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
 2020-05-26 17:01:51,877 werkzeug     INFO     127.0.0.1 - - [26/May/2020 17:01:51] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 18:04:55,147 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-26 18:04:55,153 werkzeug     INFO      * Restarting with stat
+2020-05-26 18:04:55,847 werkzeug     WARNING   * Debugger is active!
+2020-05-26 18:04:55,859 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-26 18:04:59,228 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:04:59,246 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:04:59] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:04:59,257 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:04:59,322 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:04:59] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 18:05:34,416 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:05:34,436 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:05:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+2020-05-26 18:05:34,496 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:05:34] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-26 18:05:34,595 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:05:34] "[36mGET /static/images/MyFish.png HTTP/1.1[0m" 304 -
+2020-05-26 18:05:48,211 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:05:48] "[37mGET /register HTTP/1.1[0m" 200 -
+2020-05-26 18:06:33,030 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:06:33] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-26 18:06:38,475 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['superadmin', 1, 0])
+2020-05-26 18:06:38,521 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:06:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2020-05-26 18:06:38,534 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:06:38,554 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:06:38] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 18:07:07,289 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:07:07,318 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-26 18:07:07,348 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:07:07] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 18:08:11,694 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:08:11,718 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [4, 1, 0])
+2020-05-26 18:08:11,729 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:08:11] "[37mPOST /getUserByID HTTP/1.1[0m" 200 -
+2020-05-26 18:09:12,427 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:09:12,467 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:09:12] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 18:09:16,587 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:09:16,605 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-26 18:09:16,614 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:09:16] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 18:09:55,310 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:09:55,327 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:09:55] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 18:10:37,173 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:10:37,205 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:10:37] "[37mGET /add_user_account HTTP/1.1[0m" 200 -
+2020-05-26 18:11:04,290 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:11:04,316 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:11:04] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-26 18:13:09,654 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:13:09,679 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:13:09] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 18:13:42,320 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:13:42,348 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:13:42] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 18:14:45,696 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:14:45,712 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:14:45] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 18:14:47,823 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:14:47,851 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:14:47] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:15:21,482 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:15:21,509 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:15:21] "[37mGET /add_memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:16:08,468 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:16:08,545 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:16:08] "[37mGET /add_memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:16:09,237 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:16:09] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 18:16:41,826 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:16:41,844 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:16:41] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:16:42,783 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:16:42,810 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:16:42] "[37mGET /add_memorandum2 HTTP/1.1[0m" 200 -
+2020-05-26 18:17:07,107 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:17:07,129 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:17:07] "[37mGET /add_memorandum2 HTTP/1.1[0m" 200 -
+2020-05-26 18:17:07,703 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:17:07] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 18:17:42,358 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:17:42,381 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:17:42] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:17:45,018 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:17:45,045 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:17:45] "[37mGET /detail_memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:18:11,284 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:18:11,317 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:18:11] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:35:55,551 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:35:55,570 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:35:55] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:35:55,585 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:35:55,600 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:35:55] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 18:35:58,880 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:35:58,892 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-26 18:35:58,901 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:35:58] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 18:36:02,651 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:36:02,667 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:02] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-26 18:36:04,182 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:36:04,198 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:04] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 18:36:06,098 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:36:06,116 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:06] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,509 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:36:32,519 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,572 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,575 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,583 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,586 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/images/MyFish.png HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,594 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,594 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,604 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,609 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-26 18:36:32,613 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:36:32] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-26 18:57:55,212 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-26 18:57:55,218 werkzeug     INFO      * Restarting with stat
+2020-05-26 18:57:55,708 werkzeug     WARNING   * Debugger is active!
+2020-05-26 18:57:55,718 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-26 18:58:05,148 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:05] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:58:05,377 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:05] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+2020-05-26 18:58:06,483 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:06] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-26 18:58:07,073 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:07] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-26 18:58:19,784 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2020-05-26 18:58:19,816 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:19] "[37mPOST /login?next=%2F HTTP/1.1[0m" 200 -
+2020-05-26 18:58:27,300 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['superadmin', 1, 0])
+2020-05-26 18:58:27,324 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+2020-05-26 18:58:27,334 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:27,349 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:58:27,359 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:27,427 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 18:58:27,500 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-26 18:58:27,500 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-26 18:58:27,766 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:27] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-26 18:58:49,196 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:49,214 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-26 18:58:49,253 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:49] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 18:58:54,118 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:54,132 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:54] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-26 18:58:54,141 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:54,161 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:54] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 18:58:59,040 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:58:59,058 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2020-05-26 18:58:59,069 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:58:59] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-26 18:59:44,940 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['superadmin', 1, 0])
+2020-05-26 18:59:44,957 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:59:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2020-05-26 18:59:44,967 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 18:59:44,982 werkzeug     INFO     127.0.0.1 - - [26/May/2020 18:59:44] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 19:00:29,729 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:00:29,753 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:00:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+2020-05-26 19:00:29,772 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:00:29] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-26 19:01:55,341 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:01:55] "[37mGET /register HTTP/1.1[0m" 200 -
+2020-05-26 19:07:13,811 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:07:13] "[37mGET /login HTTP/1.1[0m" 200 -
+2020-05-26 19:07:17,835 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['superadmin', 1, 0])
+2020-05-26 19:07:17,859 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:07:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2020-05-26 19:07:17,867 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:07:17,881 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:07:17] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-26 19:09:26,381 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:09:26,395 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-26 19:09:26,401 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:09:26] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-26 19:12:03,790 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:12:03,805 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [4, 1, 0])
+2020-05-26 19:12:03,813 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:12:03] "[37mPOST /getUserByID HTTP/1.1[0m" 200 -
+2020-05-26 19:12:33,079 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:12:33,115 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:12:33] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:12:41,826 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:12:41,846 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:12:41] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:14:03,994 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:14:04,047 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:14:04] "[37mGET /add_user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:14:13,471 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:14:13,487 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:14:13] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:15:04,323 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:15:04,341 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:15:04] "[37mGET /add_user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:17:03,005 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:17:03,129 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:17:03] "[37mGET /user_account HTTP/1.1[0m" 200 -
+2020-05-26 19:17:43,190 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:17:43,216 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:17:43] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-26 19:20:51,206 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:20:51,257 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:20:51] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-26 19:21:45,646 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:21:45,693 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:21:45] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-26 19:23:20,314 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:23:20,347 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:23:20] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:24:33,178 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:24:33,212 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:24:33] "[37mGET /add_memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:26:27,312 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:26:27,333 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:26:27] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:26:28,805 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:26:28,838 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:26:28] "[37mGET /add_memorandum2 HTTP/1.1[0m" 200 -
+2020-05-26 19:27:29,316 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:27:29,336 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:27:29] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:27:31,186 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:27:31,219 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:27:31] "[37mGET /detail_memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:29:28,605 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:29:28,620 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:29:28] "[37mGET /memorandum HTTP/1.1[0m" 200 -
+2020-05-26 19:29:39,997 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-26 19:29:40,016 werkzeug     INFO     127.0.0.1 - - [26/May/2020 19:29:40] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-29 15:36:52,303 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 15:36:52,307 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:36:52,689 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:36:52,718 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:36:55,297 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:36:55,379 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[32mGET / HTTP/1.1[0m" 302 -
+2020-05-29 15:36:55,390 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:36:55,522 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /index HTTP/1.1[0m" 200 -
+2020-05-29 15:36:55,682 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 15:36:55,684 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 15:36:55,686 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 15:36:55,989 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:36:55,990 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:55] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,001 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,013 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,020 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,024 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,026 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,513 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 15:36:56,517 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:56] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 15:36:59,203 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:36:59,224 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 15:36:59,244 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:36:59] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 15:44:40,973 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 15:44:40,982 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:44:41,350 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:44:41,360 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:44:45,004 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:44:45,075 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 15:44:45,152 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:44:45] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 15:44:45,752 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:44:45] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,028 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:47:43,070 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 15:47:43,097 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,161 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,165 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,169 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,279 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,287 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,288 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,290 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,291 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,295 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,318 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,446 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 15:47:43,457 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:43] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 15:47:44,421 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:44] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 15:47:44,926 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:47:44,945 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s OFFSET %s', [1, 0])
+2020-05-29 15:47:45,065 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:45] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:47:50,271 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:47:50,276 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:47:50,365 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:50] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 15:47:50,368 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:50] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 15:47:50,398 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:47:50,452 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:47:50] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 15:48:51,428 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:48:51,535 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:48:52,667 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:48:52,695 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:48:54,241 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:48:54,260 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s OFFSET %s', [1, 0])
+2020-05-29 15:48:54,317 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:48:54] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:49:38,576 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:49:38,685 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:49:39,759 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:49:39,769 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:49:43,634 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:49:43,701 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:49:43] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:50:07,335 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:50:07,410 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:50:08,667 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:50:08,681 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:50:12,582 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:50:12,599 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:50:12,628 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:50:12] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:50:34,210 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:50:34,266 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:50:34,850 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:50:34,857 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:50:39,750 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:50:39,773 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:50:39,817 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:50:39] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:50:51,242 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:50:51,300 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:50:52,198 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:50:52,208 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:50:59,404 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:50:59,538 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:51:00,858 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:51:00,878 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:51:01,744 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:51:01,762 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:51:01,808 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:51:01] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:51:23,372 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:51:23,429 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:51:24,275 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:51:24,332 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:51:27,461 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:51:27,520 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:51:27] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:52:43,431 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:52:43,462 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:52:43] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:52:58,746 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 15:52:58,751 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:52:59,348 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:52:59,361 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:53:02,649 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:53:02,691 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:53:02] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:53:22,812 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:53:22,876 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:53:23,905 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:53:23,917 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:53:26,765 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:53:26,791 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:53:26,826 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:53:26] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:53:40,280 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:53:40,374 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:53:41,122 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:53:41,131 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:54:39,186 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:54:39,249 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:54:46,048 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 15:54:46,051 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:54:46,506 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:54:46,516 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:54:51,328 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:54:51,346 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:54:51,380 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:54:51] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:55:07,960 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:55:08,024 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:55:09,140 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:55:09,151 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:55:13,389 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:55:13,409 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:55:13,436 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:55:13] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:55:31,628 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:55:31,711 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:55:32,658 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:55:32,670 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:55:35,408 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:55:35,430 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC', [])
+2020-05-29 15:55:35,477 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:55:35] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:55:59,213 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:55:59,276 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:55:59,808 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:55:59,848 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:56:04,994 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:56:05,076 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:56:06,042 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:56:06,054 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:56:07,278 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:56:07,291 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` LIMIT %s OFFSET %s', [1, 0])
+2020-05-29 15:56:07,339 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:56:07] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:56:42,751 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:56:42,831 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:56:43,915 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:56:43,925 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:56:45,558 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:56:45,573 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` LIMIT %s OFFSET %s', [1, 0])
+2020-05-29 15:56:45,617 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:56:45] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:58:50,244 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:58:50,368 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:58:51,364 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:58:51,374 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:59:04,660 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:59:04,748 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:59:05,536 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:59:05,548 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:59:11,222 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:59:11,269 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:59:11] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 15:59:18,877 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:59:18,932 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:59:19,558 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:59:19,572 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:59:48,133 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:59:48,198 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:59:49,180 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:59:49,191 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:59:51,244 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 15:59:51,298 werkzeug     INFO      * Restarting with stat
+2020-05-29 15:59:51,743 werkzeug     WARNING   * Debugger is active!
+2020-05-29 15:59:51,752 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 15:59:58,497 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 15:59:58,541 werkzeug     INFO     127.0.0.1 - - [29/May/2020 15:59:58] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 16:00:10,365 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:00:10,534 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:00:11,557 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:00:11,582 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:00:16,680 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:00:16,735 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:00:17,159 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:00:17,169 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:00:23,338 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:00:23,396 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:00:23,773 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:00:23,782 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:00:32,709 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:00:32,757 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:00:32] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 16:01:14,828 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:01:14,893 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:01:15,726 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:01:15,736 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:01:22,492 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:01:22,520 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:01:22,547 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:01:22] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 16:01:37,236 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:01:37,312 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:01:37,967 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:01:37,976 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:01:48,214 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:01:48,348 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:01:49,186 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:01:49,197 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:01:58,201 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:01:58,217 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:01:58,246 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:01:58] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 16:02:20,801 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:02:20,851 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:02:21,750 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:02:21,766 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:02:31,142 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:02:31,158 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:02:31,162 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:02:31] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:02:43,467 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:02:43,482 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:02:43,489 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:02:43] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:03:04,559 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:04,580 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:03:04,650 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:04] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:03:04,747 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:04] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:04,756 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:04] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:04,757 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:04] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:04,991 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:04] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,000 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,007 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,008 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,013 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,021 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,054 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,307 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,311 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:05,457 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:05,528 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:05,646 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:05,660 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:05,713 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:05,769 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:05] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:06,350 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:06] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,342 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:19,360 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:03:19,382 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,439 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,447 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,466 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,617 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,622 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,630 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,632 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,644 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,647 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,649 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,784 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,793 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:19,891 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:19,938 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:19] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:20,113 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:20,148 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:20] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:20,198 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:20,241 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:20] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:20,779 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:20] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:50,097 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 16:03:50,100 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:03:50,698 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:03:50,711 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:03:52,082 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:52,102 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:03:52,155 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,221 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,222 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,226 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,343 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,350 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,353 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,359 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,360 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,363 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,378 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,474 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,483 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:03:52,546 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:52,696 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:52,909 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:52,916 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:52,938 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:52,951 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:52] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:03:53,529 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:53] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:03:54,599 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:03:54,619 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:03:54,626 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:03:54] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,254 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:04:43,269 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:04:43,291 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,360 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,366 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,367 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,482 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,484 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,492 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,495 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,501 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,505 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,537 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,707 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,708 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:04:43,809 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:04:43,825 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:43] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:04:44,028 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:04:44,034 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:04:44,054 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:44] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:04:44,068 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:44] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:04:44,473 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:44] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:04:45,812 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:04:45,825 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:04:45,829 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:04:45] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:05:23,718 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:05:23,793 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:05:25,137 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:05:25,177 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:05:31,343 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:05:31,399 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:05:32,005 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:05:32,021 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:05:32,564 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:05:32,592 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:05:32,652 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,731 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,738 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,739 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,921 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,922 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,923 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,924 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,925 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,930 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:05:32,960 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:32] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:05:33,707 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:33] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:05:33,754 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:33] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:05:33,959 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:05:34,022 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:34] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:05:34,268 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:05:34,275 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:05:34,297 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:34] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:05:34,312 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:34] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:05:35,211 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:35] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:05:41,545 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:05:41,567 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:05:41,578 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:05:41] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:06:03,779 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:03,805 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000001', 'Dori 2x5', 'Ikan Dori 2x5', 50000, datetime.datetime(2020, 5, 29, 16, 6, 3, 803945), 1])
+2020-05-29 16:06:03,823 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:03] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:06:04,881 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:04,926 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:06:04,939 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:04] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:06:05,409 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:05,414 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:05,426 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:05,435 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:05] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:06:05,449 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:05] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:06:05,460 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:05] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:06:22,711 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:06:22,722 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:06:22,754 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:06:22] "[35m[1mPOST /getProductCode HTTP/1.1[0m" 500 -
+2020-05-29 16:06:37,327 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:06:37,470 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:06:38,751 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:06:38,763 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:06:53,125 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:06:53,182 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:06:54,097 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:06:54,112 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:07:00,266 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:07:00,330 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:07:00,992 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:07:01,000 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:07:10,962 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:10,983 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:07:10,988 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:10] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:07:28,546 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:28,561 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000002', 'Dori 3x1', 'Ikan Dori 3x1', 40000, datetime.datetime(2020, 5, 29, 16, 7, 28, 561073), 1])
+2020-05-29 16:07:28,596 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:28] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:07:29,638 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:29,652 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:07:29,721 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:29] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:07:30,186 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:30,188 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:30,193 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:30,244 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:30] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:07:30,250 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:30] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:07:30,274 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:30] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:07:32,539 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:32,554 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:07:32,560 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:32] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:07:50,666 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:50,681 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000003', 'Dori 3x5', 'Ikan Dori 3x5', 90000, datetime.datetime(2020, 5, 29, 16, 7, 50, 680366), 1])
+2020-05-29 16:07:50,701 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:50] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:07:51,750 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:51,768 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:07:51,778 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:51] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:07:52,243 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:52,257 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:52] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:07:52,297 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:52,309 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:07:52,339 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:52] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:07:52,362 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:07:52] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:08:57,828 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:08:57,888 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:08:57,934 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:57] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,069 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,073 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,085 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,215 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,216 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,216 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,219 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,220 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,221 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,321 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,407 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,408 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:08:58,513 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:08:58,532 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:08:58,665 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:08:58,691 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:08:58,759 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:08:58,775 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:58] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:08:59,164 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:08:59] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:09:00,198 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:00,211 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [2, 1, 0])
+2020-05-29 16:09:00,216 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:00] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:09:08,565 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:08,577 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:09:08,583 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:08] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:09:12,298 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:12,309 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:09:12,313 peewee       DEBUG    ('UPDATE `product` SET `product_name` = %s, `description` = %s, `price` = %s, `updated_at` = %s, `updated_by` = %s WHERE (`product`.`id` = %s)', ['', '', '', datetime.datetime(2020, 5, 29, 16, 9, 12, 312524), 1, 3])
+2020-05-29 16:09:12,413 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:12] "[37mPOST /updateProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:09:13,550 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:13,599 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:09:13,621 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:13] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:09:14,214 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:14,231 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:14] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:09:14,237 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:14,253 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:14] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:09:14,300 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:09:14,312 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:09:14] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:02,072 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:02,094 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:10:02,127 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,187 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,198 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,206 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,335 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,351 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,359 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,372 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,378 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,387 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,395 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,469 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:02,490 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:02,552 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,567 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:10:02,760 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:02,797 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:02,858 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:02,874 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:02] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:03,393 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:03] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:10:04,804 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:04,819 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:10:04,825 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:04] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:10:22,646 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:22,666 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:10:22,672 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:22] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:10:34,214 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:34,227 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:10:34,231 peewee       DEBUG    ('UPDATE `product` SET `product_name` = %s, `description` = %s, `price` = %s, `updated_at` = %s, `updated_by` = %s WHERE (`product`.`id` = %s)', ['Dori 3x5', 'Ikan Dori 3x5', 90000, datetime.datetime(2020, 5, 29, 16, 10, 34, 230807), 1, 3])
+2020-05-29 16:10:34,241 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:34] "[37mPOST /updateProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:10:35,274 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:35,290 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:10:35,297 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:35] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:10:35,655 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:35,669 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:35] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:35,753 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:35,759 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:10:35,775 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:35] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:10:35,785 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:10:35] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:12:08,081 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:12:08,096 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:12:08,121 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,211 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,212 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,215 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,340 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,342 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,358 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,358 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,361 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,371 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,410 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,544 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,555 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:12:08,671 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:12:08,689 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:12:08,784 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:12:08,794 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:12:08,819 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:12:08,842 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:08] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:12:09,242 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:09] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:12:09,880 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:12:09,892 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:12:09,898 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:12:09] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,483 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:04,503 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:13:04,535 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,600 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,610 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,613 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,761 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,764 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,769 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,773 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,774 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,784 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,827 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,950 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:13:04,955 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:04] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:13:05,251 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:05,276 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:05,279 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:05] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:05,294 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:05] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:05,304 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:05,323 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:05] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:05,756 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:05] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:13:07,735 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:07,747 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:13:07,752 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:07] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:13:11,080 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:11,085 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:11,103 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:13:11,113 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:11] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:13:11,116 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [3, 1, 0])
+2020-05-29 16:13:11,132 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:11] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:13:13,941 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:13,945 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:13,956 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:13:13,967 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:13] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:13:13,971 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [2, 1, 0])
+2020-05-29 16:13:13,979 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:13] "[37mPOST /getProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:13:23,813 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:23,824 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:13:23,831 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:23] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:13:28,506 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:28,518 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000004', 'ads', 'asda', 10000, datetime.datetime(2020, 5, 29, 16, 13, 28, 518103), 1])
+2020-05-29 16:13:28,537 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:28] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:13:29,577 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:29,590 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:13:29,600 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:29] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:13:30,106 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:30,110 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:30,128 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:30] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:30,138 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:30,148 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:30] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:30,160 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:30] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:13:33,648 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:33,658 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [4])
+2020-05-29 16:13:33,670 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:13:33,675 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:33] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:13:37,025 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:13:37,036 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [4])
+2020-05-29 16:13:37,039 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:13:37,046 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:13:37] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:15:00,419 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:00,433 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [4])
+2020-05-29 16:15:00,437 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:15:00,443 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:00] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:15:02,620 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:02,632 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [4])
+2020-05-29 16:15:02,636 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:15:02,641 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:02] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:15:12,938 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:12,952 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:15:12,964 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:12] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,053 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,054 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,057 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,150 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,151 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,154 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,155 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,172 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,194 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,194 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,301 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,306 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:15:13,472 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:13,486 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:13,593 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:13,610 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:13,695 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:13,714 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:13] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:14,057 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:14] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,467 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:53,482 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:15:53,506 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,580 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,591 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,600 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,710 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,736 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,750 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,764 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,781 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,793 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,800 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,886 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:15:53,892 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:53] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:15:54,004 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:54,024 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:54,043 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:54] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:54,052 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:54] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:54,174 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:54,191 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:54] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:15:54,620 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:54] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:15:56,424 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:15:56,435 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:15:56,441 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:15:56] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:16:00,396 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:00,407 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000004', 'asd', 'asd', 1233, datetime.datetime(2020, 5, 29, 16, 16, 0, 407435), 1])
+2020-05-29 16:16:00,424 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:00] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:16:01,449 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:01,464 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:16:01,474 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:01] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:16:01,850 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:01,866 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:01] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:16:01,962 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:01,967 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:01,986 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:01] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:16:02,004 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:02] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:16:04,779 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:04,790 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [5])
+2020-05-29 16:16:04,803 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:16:04,809 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:04] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:16:29,874 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:29,922 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-29 16:16:29,973 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:29] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-29 16:16:46,447 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:46,588 peewee       DEBUG    ('SELECT 1 FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s', ['tasd', 1])
+2020-05-29 16:16:46,599 peewee       DEBUG    ('INSERT INTO `user` (`username`, `password`, `fullname`, `email`, `phone`, `address`, `role`, `status`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', ['tasd', 'pbkdf2:sha256:150000$GW03CUyf$ec4acf189cdca6249a10da37f32aaa37f4fd00e487183ffb59ff89677f050725', 'tasd', 'b@gmail.com', '082257125486', 'atas', 'admin', True, datetime.datetime(2020, 5, 29, 16, 16, 46, 598425), 1])
+2020-05-29 16:16:46,620 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:46] "[37mPOST /insertUser HTTP/1.1[0m" 200 -
+2020-05-29 16:16:47,672 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:47,686 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-29 16:16:47,695 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:47] "[37mGET /user HTTP/1.1[0m" 200 -
+2020-05-29 16:16:51,088 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:16:51,100 peewee       DEBUG    ('DELETE FROM `user` WHERE (`user`.`id` = %s)', [5])
+2020-05-29 16:16:51,108 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1`', [])
+2020-05-29 16:16:51,114 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:16:51] "[37mPOST /deleteUserByID HTTP/1.1[0m" 200 -
+2020-05-29 16:17:34,878 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:34,899 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:17:34,939 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:34] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,035 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,036 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,036 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,213 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,221 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,221 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,222 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,228 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,229 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,241 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,366 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,370 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:17:35,498 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:35,522 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:35,657 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:35,663 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:35,676 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:35,687 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:35] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:36,384 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:36] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:17:37,863 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:37,875 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:17:37,879 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:37] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:17:42,878 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:42,889 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000004', 'asd', 'asd', 123444, datetime.datetime(2020, 5, 29, 16, 17, 42, 889381), 1])
+2020-05-29 16:17:42,917 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:42] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:17:43,943 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:43,959 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:17:43,969 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:43] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:17:44,344 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:44,360 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:44] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:44,488 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:44,494 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:44,508 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:44] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:44,516 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:44] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:47,785 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:47,798 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [6])
+2020-05-29 16:17:47,807 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:17:47,814 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:47] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:17:48,844 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:48,858 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:17:48,866 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:48] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:17:49,333 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:49,347 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:49] "[33mGET /static/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:49,479 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:49,484 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:17:49,518 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:49] "[33mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:17:49,524 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:17:49] "[33mGET /static/js/_site_dashboard_free/assets/js/dashboard-free.js.map HTTP/1.1[0m" 404 -
+2020-05-29 16:18:37,436 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:37,452 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:18:37,481 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,546 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,548 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,552 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,639 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,643 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,654 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,656 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,666 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,671 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,717 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,812 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,822 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:37] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:18:37,985 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:38,005 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:18:38,012 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:38] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:18:38,488 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:38] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:18:39,134 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:39,145 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1` ORDER BY `t1`.`id` DESC LIMIT %s', [1])
+2020-05-29 16:18:39,150 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:39] "[37mPOST /getProductCode HTTP/1.1[0m" 200 -
+2020-05-29 16:18:43,076 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:43,092 peewee       DEBUG    ('INSERT INTO `product` (`product_code`, `product_name`, `description`, `price`, `created_at`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s)', ['PD-000004', 'asd', 'asd', 123455, datetime.datetime(2020, 5, 29, 16, 18, 43, 91806), 1])
+2020-05-29 16:18:43,104 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:43] "[37mPOST /insertProduct HTTP/1.1[0m" 200 -
+2020-05-29 16:18:44,126 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:44,140 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:18:44,147 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:44] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:18:47,539 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:47,551 peewee       DEBUG    ('DELETE FROM `product` WHERE (`product`.`id` = %s)', [7])
+2020-05-29 16:18:47,571 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:18:47,576 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:47] "[37mPOST /deleteProductByID HTTP/1.1[0m" 200 -
+2020-05-29 16:18:48,599 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:18:48,613 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:18:48,620 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:18:48] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:19:26,220 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/product/views.py', reloading
+2020-05-29 16:19:26,380 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:19:27,681 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:19:27,695 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:20:09,493 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/user/views.py', reloading
+2020-05-29 16:20:09,556 werkzeug     INFO      * Restarting with stat
+2020-05-29 16:20:10,294 werkzeug     WARNING   * Debugger is active!
+2020-05-29 16:20:10,301 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 16:20:16,239 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:20:16,262 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`product_code`, `t1`.`product_name`, `t1`.`description`, `t1`.`price`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `product` AS `t1`', [])
+2020-05-29 16:20:16,316 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /product HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,364 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,375 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,376 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,483 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,489 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,491 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,495 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,503 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,511 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,512 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,604 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:20:16,606 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:16] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 16:20:17,234 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:20:17] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 16:29:14,161 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 16:29:14,206 werkzeug     INFO     127.0.0.1 - - [29/May/2020 16:29:14] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-29 17:52:31,679 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 17:52:31,684 werkzeug     INFO      * Restarting with stat
+2020-05-29 17:52:32,076 werkzeug     WARNING   * Debugger is active!
+2020-05-29 17:52:32,088 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 17:52:41,465 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 17:52:41,562 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /stock HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,906 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,928 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,931 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,936 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,936 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,942 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/images/MyFish-Enlarge.png HTTP/1.1[0m" 200 -
+2020-05-29 17:52:41,943 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:41] "[37mGET /static/images/theme/profile.png HTTP/1.1[0m" 200 -
+2020-05-29 17:52:42,421 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:42] "[37mGET /static/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 17:52:42,425 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:42] "[37mGET /static/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+2020-05-29 17:52:42,912 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:42] "[37mGET /static/images/brand/favicon.png HTTP/1.1[0m" 200 -
+2020-05-29 17:52:51,188 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`address`, `t1`.`role`, `t1`.`status`, `t1`.`created_at`, `t1`.`created_by`, `t1`.`updated_at`, `t1`.`updated_by` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2020-05-29 17:52:51,217 werkzeug     INFO     127.0.0.1 - - [29/May/2020 17:52:51] "[37mGET /detail_stock HTTP/1.1[0m" 200 -
+2020-05-29 17:53:31,159 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/stock/views.py', reloading
+2020-05-29 17:53:31,233 werkzeug     INFO      * Restarting with stat
+2020-05-29 17:53:32,201 werkzeug     WARNING   * Debugger is active!
+2020-05-29 17:53:32,212 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 17:57:16,080 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/stock/views.py', reloading
+2020-05-29 17:57:16,170 werkzeug     INFO      * Restarting with stat
+2020-05-29 17:57:17,247 werkzeug     WARNING   * Debugger is active!
+2020-05-29 17:57:17,278 werkzeug     INFO      * Debugger PIN: 904-598-123
+2020-05-29 17:58:55,124 werkzeug     INFO      * Detected change in '/Users/bamasangkasa/PycharmProjects/Outside/adminlte/app/stock/views.py', reloading
+2020-05-29 17:58:55,252 werkzeug     INFO      * Restarting with stat

@@ -150,14 +150,22 @@ def functionUpdateUser():
 @user.route('/deleteUserByID', methods=['POST'])
 @login_required
 def functionDeleteUserByID():
+    row = {
+        "status": "success",
+        "message": "Success"
+    }
+
     form = SearchForm()
 
     id = request.form['id']
     # Delete User By ID
     try:
         User.delete_by_id(id)
+        row['status'] = "success"
+        row['message'] = "Successfully Deleted"
     except Exception as e:
-        print("Error Delete", e)
+        row['status'] = "danger"
+        row['message'] = "Failed to Delete"
 
     # Get All User
     user = User.select().execute()

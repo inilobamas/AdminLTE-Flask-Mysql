@@ -135,7 +135,7 @@ def load_user(user_id):
 # Build Table
 def create_table():
     db.connect()
-    db.create_tables([CfgNotify, User])
+    db.create_tables([CfgNotify, User, Product, Stock, DetailStock, Memorandum, DetailMemorandum, UserAccount])
 
 
 if __name__ == '__main__':
