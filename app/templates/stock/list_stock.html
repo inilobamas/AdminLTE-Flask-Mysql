@@ -39,60 +39,26 @@
                     <tbody>
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len_list)%}
                       <tr>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">PD-000001</span>
+                              <span class="mb-0 text-sm">{{list_stock[i].product.product_code}}</span>
                             </div>
                           </div>
                         </th>
                           <td>
-                          Dori 2x5
+                          {{list_stock[i].product.product_name}}
                         </td>
                         <td>
-                          95kg
+                          {{list_stock[i].stock_amount}}
                         </td>
                         <td class="text-right">
                             <a href="/detail_stock"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">PD-000002</span>
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          Dori 3x1
-                        </td>
-                        <td>
-                          50kg
-                        </td>
-                        <td class="text-right">
-                            <a href="/detail_stock"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">PD-000003</span>
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          Dori 3x5
-                        </td>
-                        <td>
-                          50kg
-                        </td>
-                        <td class="text-right">
-                            <a href="/detail_stock"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
-                        </td>
-                      </tr>
+                    {%endfor%}
                     <!--          End List          -->
 
                     </tbody>
