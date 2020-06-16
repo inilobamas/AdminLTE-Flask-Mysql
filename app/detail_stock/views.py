@@ -9,6 +9,9 @@ import json, datetime
 @detail_stock.route('/detail_stock', methods=['GET', 'POST'])
 @login_required
 def functionGetDetailStock():
+    product_id = request.args.get('product_id')
+    print("product_id", product_id)
+
     form = SearchForm()
     # if request.method == 'POST' and form.validate_on_submit():
     #     user = User.select()\

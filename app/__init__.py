@@ -41,6 +41,12 @@ def create_app(config_name):
     from app.user_account import user_account as user_account_blueprint
     app.register_blueprint(user_account_blueprint)
 
+    from app.category_product import category_product as category_product_blueprint
+    app.register_blueprint(category_product_blueprint)
+
+    from app.product_raw import product_raw as product_raw_blueprint
+    app.register_blueprint(product_raw_blueprint)
+
     from app.product import product as product_blueprint
     app.register_blueprint(product_blueprint)
 

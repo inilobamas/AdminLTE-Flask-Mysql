@@ -48,8 +48,30 @@ class User(UserMixin, BaseModel):
     def generate_password(self, password):
         return generate_password_hash(password)
 
+# Product Raw
+class ProductRaw(UserMixin, BaseModel):
+    product_raw_code = CharField()
+    product_raw_name = CharField()
+    product_raw_description = CharField(null=True)
+    amount = IntegerField(null=True)
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
+# CategoryProduct
+class CategoryProduct(UserMixin, BaseModel):
+    category_product_name = IntegerField()
+    category_product_description = CharField(null=True)
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
 # Product
 class Product(UserMixin, BaseModel):
+    product_raw_id = IntegerField()
+    category_product_id = IntegerField()
     product_code = CharField()
     product_name = CharField()
     description = CharField(null=True)
@@ -135,7 +157,7 @@ def load_user(user_id):
 # Build Table
 def create_table():
     db.connect()
-    db.create_tables([CfgNotify, User, Product, Stock, DetailStock, Memorandum, DetailMemorandum, UserAccount])
+    db.create_tables([CfgNotify, User, CategoryProduct, Product, Stock, DetailStock, Memorandum, DetailMemorandum, UserAccount, ProductRaw])
 
 
 if __name__ == '__main__':

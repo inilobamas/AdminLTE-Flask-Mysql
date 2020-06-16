@@ -1,7 +1,7 @@
 from flask import render_template, redirect, request, url_for, flash
 from . import product
 from .forms import SearchForm
-from app.models import Product
+from app.models import Product, CategoryProduct, ProductRaw, Stock
 from flask_login import login_required, current_user
 import json, datetime
 
@@ -11,16 +11,31 @@ import json, datetime
 def functionGetProduct():
     form = SearchForm()
     if request.method == 'POST' and form.validate_on_submit():
-        product = Product.select()\
+        product = Product.select(Product, CategoryProduct, ProductRaw, Stock) \
+            .join(CategoryProduct, on=(Product.category_product_id == CategoryProduct.id)) \
+            .switch(Product) \
+            .join(ProductRaw, on=(Product.product_raw_id == ProductRaw.id)) \
+            .switch(Product) \
+            .join(Stock, on=(Stock.product_id == Product.id)) \
             .where(
                 Product.product_code.contains(form.search.data)
                 | Product.product_name.contains(form.search.data)
                 | Product.description.contains(form.search.data)
+                | CategoryProduct.category_product_name.contains(form.search.data)
             )
     else:
-        product = Product.select().execute()
+        product = Product.select(Product, CategoryProduct, ProductRaw, Stock)\
+            .join(CategoryProduct, on=(Product.category_product_id == CategoryProduct.id)) \
+            .switch(Product) \
+            .join(ProductRaw, on=(Product.product_raw_id == ProductRaw.id)) \
+            .switch(Product) \
+            .join(Stock, on=(Stock.product_id == Product.id)) \
+            .execute()
 
-    return render_template('product/list_product.html', current_user=current_user, form=form, len_list=len(product), list_product=product)
+    category_product = CategoryProduct.select().execute()
+    product_raw = ProductRaw.select().execute()
+
+    return render_template('product/list_product.html', current_user=current_user, form=form, len_list=len(product), list_product=product, len_dropdown_category_product=len(category_product), dropdown_category_product=category_product, len_product_raw=len(product_raw), dropdown_product_raw=product_raw)
 
 # Get Product
 @product.route('/getProductByID', methods=['POST'])
@@ -31,6 +46,8 @@ def functionGetProductByID():
     product = Product.get_by_id(id)
 
     product_row = {
+        "product_raw_id": product.product_raw_id,
+        "category_product_id": product.category_product_id,
         "product_code": product.product_code,
         "product_name": product.product_name,
         "description": product.description,
@@ -62,6 +79,8 @@ def functionInsertProduct():
         "message": "Success"
     }
 
+    product_raw_id = request.form['product_raw_id']
+    category_product_id = request.form['category_product_id']
     product_code = request.form['product_code']
     product_name = request.form['product_name']
     description = request.form['description']
