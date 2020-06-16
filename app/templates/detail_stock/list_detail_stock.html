@@ -34,10 +34,10 @@
 
                       <tr>
                         <th scope="col">Kode Produk</th>
-                        <th scope="col">PD-000001</th>
+                        <th scope="col">{{data_product.product_code}}</th>
                         <th width="5%" scope="col"></th>
                         <th scope="col">Nama Produk</th>
-                        <th scope="col">Dori 2x5</th>
+                        <th scope="col">{{data_product.product_name}}</th>
                         <th width="70%" scope="col"></th>
                       </tr>
                     </tbody>
@@ -47,20 +47,21 @@
                       <tr>
                         <th scope="col">Tanggal</th>
                         <th scope="col">Nama</th>
-                        <th scope="col">Jumlah Masuk</th>
-                        <th scope="col">Jumlah Keluar</th>
-                        <th scope="col">Sisa</th>
+                        <th scope="col">Jumlah Masuk (kg)</th>
+                        <th scope="col">Jumlah Keluar (kg)</th>
+                        <th scope="col">Sisa (kg)</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len_list)%}
                       <tr>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">12 Mei 2020</span>
+                              <span class="mb-0 text-sm">{{list_detail_stock[i].start_date}}</span>
                             </div>
                           </div>
                         </th>
@@ -68,42 +69,19 @@
                           Rani
                         </td>
                         <td>
-                          100kg
+                          {{list_detail_stock[i].amount_in}}
                         </td>
                         <td>
-
+                          {{list_detail_stock[i].amount_out}}
                         </td>
                         <td>
-                          100kg
+                          {{list_detail_stock[i].amount_balance}}
                         </td>
                         <td class="text-right">
                             <a><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-money-coins text-white"></i></button></a>
                         </td>
                       </tr>
-                      <tr>
-                          <th scope="row">
-                            <div class="media align-items-center">
-                              <div class="media-body">
-                                <span class="mb-0 text-sm">13 Mei 2020</span>
-                              </div>
-                            </div>
-                          </th>
-                            <td>
-                            Rebkley Tri Martuko
-                          </td>
-                          <td>
-
-                          </td>
-                          <td>
-                            5kg
-                          </td>
-                          <td>
-                            95kg
-                          </td>
-                          <td class="text-right">
-                              <a><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-money-coins text-white"></i></button></a>
-                          </td>
-                        </tr>
+                      {%endfor%}
                     <!--          End List          -->
 
                     </tbody>

@@ -84,7 +84,7 @@
                               <i class="fas fa-ellipsis-v"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a data-id={{list_product[i].id}} href="/detail_stock?product_id={{list_product[i].id}}" class="dropdown-item">Detail Stok</a>
+                              <a data-id={{list_product[i].id}} href="/detail_stock?stock_id={{list_product[i].stock.id}}&product_id={{list_product[i].id}}" class="dropdown-item">Detail Stok</a>
                               <a class="dropdown-item" href="#">Tambah</a>
                               <a data-id={{list_product[i].id}} onclick="EditProduct(this)" data-toggle="modal" data-target="#editModalProduct" class="dropdown-item">Ubah</a>
                               <a data-id={{list_product[i].id}} onclick="ConfirmDeleteProduct(this)" data-toggle="modal" data-target="#deleteModalProduct" class="dropdown-item">Hapus</a>
