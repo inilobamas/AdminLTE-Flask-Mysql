@@ -18,13 +18,13 @@
       <div class="row">
             <div class="col">
 
-            <div class="" role="alert" id="alert_product">
+            <div class="" role="alert" id="alert_product_raw">
             </div>
 
               <div class="card shadow">
                 <div class="card-header border-0">
                   <h3 class="mb-0" id="left">Daftar Produk</h3>
-                  <a onclick="GetProductCode()" data-toggle="modal" data-target="#addModalProduct"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>
+                  <a onclick="GetProductRawCode()" data-toggle="modal" data-target="#addModalProductRaw"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>
                 </div>
                 <div class="table-responsive">
                   <table class="table align-items-center table-flush">
@@ -32,12 +32,8 @@
                       <tr>
                           <th scope="col">Kode Produk Mentah</th>
                           <th scope="col">Nama Produk Mentah</th>
-                        <th scope="col">Kode Produk</th>
-                          <th scope="col">Nama Kategori Produk</th>
-                        <th scope="col">Nama Produk</th>
                         <th width="40%" scope="col">Deskripsi</th>
-                          <th width="col" scope="col">Stok</th>
-                        <th scope="col">Harga (per kg)</th>
+                          <th width="col" scope="col">Jumlah</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
@@ -49,34 +45,22 @@
                           <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">{{list_product[i].productraw.product_raw_code}}</span>
+                              <span class="mb-0 text-sm">{{list_product_raw[i].product_raw_code}}</span>
                             </div>
                           </div>
                         </th>
                           <td>
-                          {{list_product[i].productraw.product_raw_name}}
+                          {{list_product_raw[i].product_raw_name}}
                         </td>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">{{list_product[i].product_code}}</span>
+                              <span class="mb-0 text-sm">{{list_product_raw[i].product_raw_description}}</span>
                             </div>
                           </div>
                         </th>
                           <td>
-                          {{list_product[i].categoryproduct.category_product_name}}
-                        </td>
-                          <td>
-                          {{list_product[i].product_name}}
-                        </td>
-                        <td>
-                          {{list_product[i].description}}
-                        </td>
-                          <td>
-                          {{list_product[i].stock.amount}}
-                        </td>
-                        <td>
-                          {{list_product[i].price}}
+                          {{list_product_raw[i].amount}}
                         </td>
                         <td class="text-right">
                           <div class="dropdown">
@@ -84,10 +68,9 @@
                               <i class="fas fa-ellipsis-v"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a data-id={{list_product[i].id}} href="/detail_stock?stock_id={{list_product[i].stock.id}}&product_id={{list_product[i].id}}" class="dropdown-item">Detail Stok</a>
                               <a class="dropdown-item" href="#">Tambah</a>
-                              <a data-id={{list_product[i].id}} onclick="EditProduct(this)" data-toggle="modal" data-target="#editModalProduct" class="dropdown-item">Ubah</a>
-                              <a data-id={{list_product[i].id}} onclick="ConfirmDeleteProduct(this)" data-toggle="modal" data-target="#deleteModalProduct" class="dropdown-item">Hapus</a>
+                              <a data-id={{list_product_raw[i].id}} onclick="EditProductRaw(this)" data-toggle="modal" data-target="#editModalProductRaw" class="dropdown-item">Ubah</a>
+                              <a data-id={{list_product_raw[i].id}} onclick="ConfirmDeleteProductRaw(this)" data-toggle="modal" data-target="#deleteModalProductRaw" class="dropdown-item">Hapus</a>
                             </div>
                           </div>
                         </td>
@@ -130,53 +113,37 @@
     </div>
 
 <!-- Add Modal Product -->
-<div class="modal fade" id="addModalProduct" tabindex="-1" role="dialog" aria-labelledby="addModalProductLabel" aria-hidden="true">
+<div class="modal fade" id="addModalProductRaw" tabindex="-1" role="dialog" aria-labelledby="addModalProductRawLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
                 </button>
-                <h4 class="modal-title" id="addModalProductLabel">Tambah Produk</h4>
+                <h4 class="modal-title" id="addModalProductRawLabel">Tambah Produk Mentah</h4>
             </div>
             <div class="modal-body">
                 <form role="form">
                     <div class="form-group">
                         <label for="recipient-code-product" class="control-label">Kode Produk:</label>
-                        <input type="text" class="form-control" id="addCodeProduct" disabled value="">
+                        <input type="text" class="form-control" id="addCodeProductRaw" disabled value="">
                     </div>
                     <div class="form-group">
-                        <label for="recipient-product-raw" class="control-label">Nama Produk Mentah:</label>
-                        <select class="form-control" id="addProductRaw">
-                            {%for i in range(0, len_product_raw)%}
-                                <option value="{{dropdown_product_raw[i].id}}">{{dropdown_product_raw[i].product_raw_name}}</option>
-                            {%endfor%}
-                        </select>
+                        <label for="recipient-name-product-raw" class="control-label">Nama Produk Mentah:</label>
+                        <input type="text" class="form-control" id="addNameProductRaw" value="">
                     </div>
                     <div class="form-group">
-                        <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
-                        <select class="form-control" id="addCategoryProduct">
-                            {%for i in range(0, len_dropdown_category_product)%}
-                                <option value="{{dropdown_category_product[i].id}}">{{dropdown_category_product[i].category_product_name}}</option>
-                            {%endfor%}
-                        </select>
+                        <label for="recipient-description-product-raw" class="control-label">Deskripsi:</label>
+                        <textarea class="form-control" id="addDescriptionProductRaw"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="recipient-name-product" class="control-label">Nama Produk:</label>
-                        <input type="text" class="form-control" id="addNameProduct">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-description" class="control-label">Deskripsi:</label>
-                        <textarea class="form-control" id="addDescription"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-price" class="control-label">Harga (per kg):</label>
-                        <input class="form-control" id="addPrice"></input>
+                        <label for="recipient-amount-product-raw" class="control-label">Jumlah (kg):</label>
+                        <input class="form-control" id="addAmountProductRaw"></input>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button onclick="InsertProduct()" type="button" id="btnAddProduct" class="btn btn-primary">Tambah</button>
+                <button onclick="InsertProductRaw()" type="button" id="btnAddProductRaw" class="btn btn-primary">Tambah</button>
             </div>
         </div>
     </div>
@@ -184,72 +151,56 @@
 
 
 <!--  Edit Modal Product  -->
-<div class="modal fade" id="editModalProduct" tabindex="-1" role="dialog" aria-labelledby="editModalProductLabel" aria-hidden="true">
+<div class="modal fade" id="editModalProductRaw" tabindex="-1" role="dialog" aria-labelledby="editModalProductRawLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
                 </button>
-                <h4 class="modal-title" id="editModalProductLabel">Ubah Produk</h4>
+                <h4 class="modal-title" id="editModalProductRawLabel">Ubah Produk</h4>
             </div>
             <div class="modal-body">
                 <form role="form">
                     <div class="form-group">
-                        <label for="recipient-code-product" class="control-label">Kode Produk:</label>
-                        <input type="text" class="form-control" id="editCodeProduct" value="" disabled>
+                        <label for="recipient-code-product-raw" class="control-label">Kode Produk:</label>
+                        <input type="text" class="form-control" id="editCodeProductRaw" value="" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="recipient-product-raw" class="control-label">Nama Produk Mentah:</label>
-                        <select class="form-control" id="editProductRaw">
-                            {%for i in range(0, len_product_raw)%}
-                                <option value="{{dropdown_product_raw[i].id}}" selected="">{{dropdown_product_raw[i].product_raw_name}}</option>
-                            {%endfor%}
-                        </select>
+                        <label for="recipient-name-product-raw" class="control-label">Nama Produk Mentah:</label>
+                        <input type="text" class="form-control" id="editNameProductRaw" value="">
                     </div>
                     <div class="form-group">
-                        <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
-                        <select class="form-control" id="editCategoryProduct">
-                            {%for i in range(0, len_dropdown_category_product)%}
-                                <option value="{{dropdown_category_product[i].id}}" selected="">{{dropdown_category_product[i].category_product_name}}</option>
-                            {%endfor%}
-                        </select>
+                        <label for="recipient-description-product-raw" class="control-label">Deskripsi:</label>
+                        <textarea class="form-control" id="editDescriptionProductRaw"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="recipient-name-product" class="control-label">Nama Produk:</label>
-                        <input type="text" class="form-control" id="editNameProduct" value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-description" class="control-label">Deskripsi:</label>
-                        <textarea class="form-control" id="editDescription"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-price" class="control-label">Harga:</label>
-                        <input class="form-control" id="editPrice" value="">
+                        <label for="recipient-amount-product-raw" class="control-label">Jumlah (kg):</label>
+                        <input class="form-control" id="editAmountProductRaw" value="">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" onclick="UpdateProduct()" class="btn btn-primary">Ubah</button>
+                <button type="button" onclick="UpdateProductRaw()" class="btn btn-primary">Ubah</button>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Delete Modal Produk -->
-<div class="modal fade" id="deleteModalProduct" tabindex="-1" role="dialog" aria-labelledby="deleteModalProductLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModalProductRaw" tabindex="-1" role="dialog" aria-labelledby="deleteModalProductRawLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 <!--            <div class="modal-header" style="text-align:center;">-->
 <!--                <h4 class="modal-title" style="color:red;" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h4>-->
 <!--            </div>-->
                 <div class="card-header border-0">
-                  <h3 class="mb-0" id="deleteModalProductLabel">Apa anda yakin menghapus data ini?</h3>
+                  <h3 class="mb-0" id="deleteModalProductRawLabel">Apa anda yakin menghapus data ini?</h3>
                 </div>
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary" onclick="DeleteProduct()">Hapus</button>
+                <button type="button" class="btn btn-primary" onclick="DeleteProductRaw()">Hapus</button>
             </div>
         </div>
     </div>
@@ -270,13 +221,13 @@
 </style>
 
 <script>
-function GetProductCode(){
+function GetProductRawCode(){
     $.ajax({
-			url : '/getProductCode',
+			url : '/getProductRawCode',
 			data : {},
 			type : 'POST',
 			success: function(res){
-				document.getElementById("addCodeProduct").value = res;
+				document.getElementById("addCodeProductRaw").value = res;
 			},
 			error: function(error){
 				console.log(error);
@@ -284,36 +235,32 @@ function GetProductCode(){
 		});
 }
 
-function EditProduct(elm){
+function EditProductRaw(elm){
 
         $.ajax({
-			url : '/getProductCode',
+			url : '/getProductRawCode',
 			data : {},
 			type : 'POST',
 			success: function(res){
-				document.getElementById("editCodeProduct").value = res;
+				document.getElementById("editCodeProductRaw").value = res;
 			},
 			error: function(error){
 				console.log(error);
 			}
 		});
 
-		localStorage.setItem('editProductID',$(elm).attr('data-id'));
+		localStorage.setItem('editProductRawID',$(elm).attr('data-id'));
 		$.ajax({
-			url : '/getProductByID',
+			url : '/getProductRawByID',
 			data : {id:$(elm).attr('data-id')},
 			type : 'POST',
 			success: function(res){
-			    $('#editProductRaw').val(res.product_raw_id);
-				$('#editCategoryProduct').val(res.category_product_id);
-				$('#editCodeProduct').val(res.product_code);
-				$('#editNameProduct').val(res.product_name);
-				$('#editDescription').val(res.description);
-				$('#editPrice').val(res.price);
+			    $('#editNameProductRaw').val(res.product_raw_name);
+				$('#editDescriptionProductRaw').val(res.product_raw_description);
+				$('#editCodeProductRaw').val(res.product_raw_code);
+				$('#editAmountProductRaw').val(res.product_raw_amount);
 
-
-
-				$('#editModalProduct').modal();
+				$('#editModalProductRaw').modal();
 
 			},
 			error: function(error){
@@ -322,29 +269,27 @@ function EditProduct(elm){
 		});
 	}
 
-function ConfirmDeleteProduct(elm){
-    localStorage.setItem('deleteProductID', $(elm).attr('data-id'));
-    $('#deleteModalProduct').modal();
+function ConfirmDeleteProductRaw(elm){
+    localStorage.setItem('deleteProductRawID', $(elm).attr('data-id'));
+    $('#deleteModalProductRaw').modal();
 }
 
 <!-- API -->
-function InsertProduct() {
+function InsertProductRaw() {
     $.ajax({
-        url: '/insertProduct',
+        url: '/insertProductRaw',
         data: {
-            product_raw_id: $('#addProductRaw').val(),
-            category_product_id: $('#addCategoryProduct').val(),
-            product_code: $('#addCodeProduct').val(),
-            product_name: $('#addNameProduct').val(),
-            description: $('#addDescription').val(),
-            price: $('#addPrice').val()
+            product_raw_name: $('#addNameProductRaw').val(),
+            product_raw_code: $('#addCodeProductRaw').val(),
+            product_raw_description: $('#addDescriptionProductRaw').val(),
+            product_raw_amount: $('#addAmountProductRaw').val()
         },
         type: 'POST',
         success: function(res) {
-            $('#addModalProduct').modal('hide');
+            $('#addModalProductRaw').modal('hide');
 
             // Change Warning Text Manual
-            var element = document.getElementById("alert_product");
+            var element = document.getElementById("alert_product_raw");
             element.className += " alert";
             element.className += " alert-dismissable";
             element.className += " alert-" + res['status'];
@@ -363,24 +308,22 @@ function InsertProduct() {
     })
 }
 
-function UpdateProduct() {
+function UpdateProductRaw() {
     $.ajax({
-        url: '/updateProduct',
+        url: '/updateProductRaw',
         data: {
-            product_raw_id: $('#editProductRaw').val(),
-            category_product_id: $('#editCategoryProduct').val(),
-            product_code: $('#editCodeProduct').val(),
-            product_name: $('#editNameProduct').val(),
-            description: $('#editDescription').val(),
-            price: $('#editPrice').val(),
-            id: localStorage.getItem('editProductID')
+            product_raw_code: $('#editCodeProductRaw').val(),
+            product_raw_name: $('#editNameProductRaw').val(),
+            product_raw_description: $('#editDescriptionProductRaw').val(),
+            product_raw_amount: $('#editAmountProductRaw').val(),
+            id: localStorage.getItem('editProductRawID')
         },
         type: 'POST',
         success: function(res) {
-            $('#editModalProduct').modal('hide');
+            $('#editModalProductRaw').modal('hide');
 
             // Change Warning Text Manual
-            var element = document.getElementById("alert_product");
+            var element = document.getElementById("alert_product_raw");
             element.className += " alert";
             element.className += " alert-dismissable";
             element.className += " alert-" + res['status'];
@@ -399,20 +342,20 @@ function UpdateProduct() {
     })
 }
 
-function DeleteProduct() {
+function DeleteProductRaw() {
     $.ajax({
-        url: '/deleteProductByID',
+        url: '/deleteProductRawByID',
         data: {
-            id: localStorage.getItem('deleteProductID')
+            id: localStorage.getItem('deleteProductRawID')
         },
         type: 'POST',
         success: function(res) {
             console.log("success");
 
-            $('#deleteModalProduct').modal('hide');
+            $('#deleteModalProductRaw').modal('hide');
 
             // Change Warning Text Manual
-            var element = document.getElementById("alert_product");
+            var element = document.getElementById("alert_product_raw");
             element.className += " alert";
             element.className += " alert-dismissable";
             element.className += " alert-" + res['status'];

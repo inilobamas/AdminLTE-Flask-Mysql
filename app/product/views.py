@@ -167,7 +167,4 @@ def functionDeleteProductByID():
         row['status'] = "danger"
         row['message'] = "Failed to Delete"
 
-    # Get All User
-    product = Product.select().execute()
-
-    return render_template('product/list_product.html', current_user=current_user, form=form, len_list=len(product), list_product=product)
+    return row

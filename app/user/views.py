@@ -167,7 +167,4 @@ def functionDeleteUserByID():
         row['status'] = "danger"
         row['message'] = "Failed to Delete"
 
-    # Get All User
-    user = User.select().execute()
-
-    return render_template('user/list_user.html', current_user=current_user, len_list=len(user), list_user=user, form=form)
+    return row
