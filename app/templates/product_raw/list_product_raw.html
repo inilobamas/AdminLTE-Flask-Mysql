@@ -23,7 +23,7 @@
 
               <div class="card shadow">
                 <div class="card-header border-0">
-                  <h3 class="mb-0" id="left">Daftar Produk</h3>
+                  <h3 class="mb-0" id="left">Daftar Produk Mentah</h3>
                   <a onclick="GetProductRawCode()" data-toggle="modal" data-target="#addModalProductRaw"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>
                 </div>
                 <div class="table-responsive">
@@ -33,7 +33,8 @@
                           <th scope="col">Kode Produk Mentah</th>
                           <th scope="col">Nama Produk Mentah</th>
                         <th width="40%" scope="col">Deskripsi</th>
-                          <th width="col" scope="col">Jumlah</th>
+                          <th width="col" scope="col">Tanggal Masuk</th>
+                          <th width="col" scope="col">Jumlah (kg)</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
@@ -59,6 +60,9 @@
                             </div>
                           </div>
                         </th>
+                          <td>
+                          {{list_product_raw[i].created_at}}
+                        </td>
                           <td>
                           {{list_product_raw[i].amount}}
                         </td>

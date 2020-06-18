@@ -23,8 +23,7 @@
 
               <div class="card shadow">
                 <div class="card-header border-0">
-                    <h3 class="mb-0"><a href="/memorandum">Daftar Nota</a> - Tambah Nota Pembelian</h3>
-<!--                  <a data-toggle="modal" data-target="#addModalStok"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>-->
+                    <h3 class="mb-0"><a href="/memorandum">Daftar Nota</a> - Tambah Nota Penjualan</h3>
                 </div>
                 <div class="table-responsive">
                   <table class="table align-items-center table-flush">
@@ -34,32 +33,33 @@
                     </tbody>
                   </table>
                   <div>
-<!--                    <tr>-->
-<!--                        <th scope="col">No Nota</th>-->
-<!--                        <th scope="col">NBL-000001</th>-->
-<!--                        <th width="5%" scope="col"></th>-->
-<!--                        <th scope="col">Tanggal</th>-->
-<!--                        <th scope="col">12 Mei 2020</th>-->
-<!--                        <th width="70%" scope="col"></th>-->
-<!--                      </tr>-->
-<!--                      <tr>-->
-<!--                        <th scope="col">No Nota</th>-->
-<!--                        <th scope="col">NBL-000001</th>-->
-<!--                        <th width="5%" scope="col"></th>-->
-<!--                        <th scope="col">Tanggal</th>-->
-<!--                        <th scope="col">12 Mei 2020</th>-->
-<!--                        <th width="70%" scope="col"></th>-->
-<!--                      </tr>-->
-                    <div class="card-body border-0">
-                      <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NBL-000001</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 12 Mei 2020</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> Rani</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a> Pembelian Bulan Mei</h4>
+                      <div class="card-body border-0">
+                        <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NBL-000001</h4>
+                        <br>
+                        <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 12 Mei 2020 11:02:12</h4>
+                        <br>
+                        <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a></h4>
+                          <br>
+                          <select class="form-control" id="addUserMemorandum">
+                              {%for i in range(0, len_list_user)%}
+                                  <option value="{{list_user[i].id}}">{{list_user[i].fullname}}</option>
+                              {%endfor%}
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a></h4>
+                          <br>
+                          <textarea class="form-control" id="addDescriptionMemorandum"></textarea>
+                      </div>
                     </div>
                   </div>
+
+                  <div style="margin-left:1%" class="form-group">
+                    <!--                  onclick="GetProductCode()"-->
+                    <a data-toggle="modal" data-target="#addModalMemorandum"> <button type="button" class="btn btn-sm btn-primary">Tambah Item <i class="ni ni-fat-add text-white"></i></button></a>
+                  </div>
+
                   <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
@@ -208,12 +208,47 @@
               </div>
             </div>
           </div>
-
-
-
         {% include "site_template/footer.html" %}
-
     </div>
+
+<!-- Add Modal Memorandum -->
+<div class="modal fade" id="addModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="addModalMemorandumLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
+                </button>
+                <h4 class="modal-title" id="addModalMemorandumLabel">Tambah Produk</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
+                        <select class="form-control" id="addCategoryProduct">
+                          <option>Test</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name-product" class="control-label">Nama Produk:</label>
+                        <input type="text" class="form-control" id="addNameProduct">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-description" class="control-label">Deskripsi:</label>
+                        <textarea class="form-control" id="addDescription"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-price" class="control-label">Harga (per kg):</label>
+                        <input class="form-control" id="addPrice"></input>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button onclick="InsertMemorandum()" type="button" id="btnAddMemorandum" class="btn btn-primary">Tambah</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Delete Modal Memorandum -->
 <div class="modal fade" id="deleteModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="deleteModalMemorandumLabel" aria-hidden="true">
@@ -252,6 +287,19 @@
 <!--    localStorage.setItem('deleteUserID', $(elm).attr('data-id'));-->
     $('#deleteModalMemorandum').modal();
 }
+
+<!--function addItem() {-->
+<!--  var table = document.getElementById("myTable");-->
+<!--  var row = table.insertRow(0);-->
+<!--  var cell1 = row.insertCell(0);-->
+<!--  var cell2 = row.insertCell(1);-->
+<!--  cell1.innerHTML = "NEW CELL1";-->
+<!--  cell2.innerHTML = "NEW CELL2";-->
+<!--}-->
+
+<!--function removeItem() {-->
+<!--  document.getElementById("myTable").deleteRow(0);-->
+<!--}-->
 </script>
 
 {% endblock content %}

@@ -36,7 +36,7 @@
                           <th scope="col">Nama Kategori Produk</th>
                         <th scope="col">Nama Produk</th>
                         <th width="40%" scope="col">Deskripsi</th>
-                          <th width="col" scope="col">Stok</th>
+                          <th width="col" scope="col">Stok (kg)</th>
                         <th scope="col">Harga (per kg)</th>
                         <th scope="col"></th>
                       </tr>
@@ -49,12 +49,12 @@
                           <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">{{list_product[i].productraw.product_raw_code}}</span>
+                              <span class="mb-0 text-sm">{{list_product[i].product_raw_code}}</span>
                             </div>
                           </div>
                         </th>
                           <td>
-                          {{list_product[i].productraw.product_raw_name}}
+                          {{list_product[i].product_raw_name}}
                         </td>
                         <th scope="row">
                           <div class="media align-items-center">
@@ -64,19 +64,19 @@
                           </div>
                         </th>
                           <td>
-                          {{list_product[i].categoryproduct.category_product_name}}
+                          {{list_product[i]['category_product_name']}}
                         </td>
                           <td>
                           {{list_product[i].product_name}}
                         </td>
                         <td>
-                          {{list_product[i].description}}
+                          {{list_product[i].product_description}}
                         </td>
                           <td>
-                          {{list_product[i].stock.amount}}
+                          {{list_product[i].stock_amount}}
                         </td>
                         <td>
-                          {{list_product[i].price}}
+                          {{list_product[i].product_price}}
                         </td>
                         <td class="text-right">
                           <div class="dropdown">
@@ -84,10 +84,10 @@
                               <i class="fas fa-ellipsis-v"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a data-id={{list_product[i].id}} href="/detail_stock?stock_id={{list_product[i].stock.id}}&product_id={{list_product[i].id}}" class="dropdown-item">Detail Stok</a>
+                              <a data-id={{list_product[i].product_id}} href="/detail_stock?stock_id={{list_product[i].stock_id}}&product_id={{list_product[i].product_id}}" class="dropdown-item">Detail Stok</a>
                               <a class="dropdown-item" href="#">Tambah</a>
-                              <a data-id={{list_product[i].id}} onclick="EditProduct(this)" data-toggle="modal" data-target="#editModalProduct" class="dropdown-item">Ubah</a>
-                              <a data-id={{list_product[i].id}} onclick="ConfirmDeleteProduct(this)" data-toggle="modal" data-target="#deleteModalProduct" class="dropdown-item">Hapus</a>
+                              <a data-id={{list_product[i].product_id}} onclick="EditProduct(this)" data-toggle="modal" data-target="#editModalProduct" class="dropdown-item">Ubah</a>
+                              <a data-id={{list_product[i].product_id}} onclick="ConfirmDeleteProduct(this)" data-toggle="modal" data-target="#deleteModalProduct" class="dropdown-item">Hapus</a>
                             </div>
                           </div>
                         </td>

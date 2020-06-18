@@ -1,7 +1,7 @@
 from flask import render_template, redirect, request, url_for, flash
 from . import memorandum
 from .forms import SearchForm
-from app.models import Memorandum
+from app.models import Memorandum, User
 from flask_login import login_required, current_user
 import json, datetime
 
@@ -10,20 +10,18 @@ import json, datetime
 @login_required
 def functionGetMemorandum():
     form = SearchForm()
-    # if request.method == 'POST' and form.validate_on_submit():
-    #     user = User.select()\
-    #         .where(
-    #             User.username.contains(form.search.data)
-    #             | User.fullname.contains(form.search.data)
-    #             | User.email.contains(form.search.data)
-    #             | User.address.contains(form.search.data)
-    #             | User.phone.contains(form.search.data)
-    #             | User.role.contains(form.search.data)
-    #         )
-    # else:
-    #     user = User.select().execute()
+    if request.method == 'POST' and form.validate_on_submit():
+        memorandum = Memorandum.select(Memorandum, User) \
+            .join(User, on=(User.id == Memorandum.user_id)) \
+            .where(
+                Memorandum.memo_number.contains(form.search.data)
+                | Memorandum.description.contains(form.search.data)
+                | User.fullname.contains(form.search.data)
+            )
+    else:
+        memorandum = Memorandum.select(Memorandum, User).join(User, on=(User.id == Memorandum.user_id)).execute()
 
-    return render_template('memorandum/list_memorandum.html', current_user=current_user, form=form) #, len_list=len(product), list_user=user)
+    return render_template('memorandum/list_memorandum.html', current_user=current_user, form=form, len_list=len(memorandum), list_memorandum=memorandum)
 
 # Add Memorandum
 @memorandum.route('/add_memorandum', methods=['GET', 'POST'])
@@ -42,8 +40,9 @@ def functionAddMemorandum():
     #         )
     # else:
     #     user = User.select().execute()
+    user = User.select().execute()
 
-    return render_template('memorandum/add_memorandum.html', current_user=current_user, form=form) #, len_list=len(product), list_user=user)
+    return render_template('memorandum/add_memorandum.html', current_user=current_user, form=form, len_list_user=len(user), list_user=user)
 
 # Add Memorandum
 @memorandum.route('/add_memorandum2', methods=['GET', 'POST'])

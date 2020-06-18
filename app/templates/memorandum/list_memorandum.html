@@ -24,8 +24,8 @@
               <div class="card shadow">
                 <div class="card-header border-0">
                   <h3 class="mb-0" id="left">Daftar Nota</h3>
-                  <a href="/add_memorandum"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i>Pembelian</button></a>
-                  <a href="/add_memorandum2"><button type="button" class="btn btn-sm btn-warning"><i class="ni ni-fat-add text-white"></i>Penjualan</button></a>
+                  <a href="/add_memorandum"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i>Penjualan</button></a>
+<!--                  <a href="/add_memorandum2"><button type="button" class="btn btn-sm btn-warning"><i class="ni ni-fat-add text-white"></i>Penjualan</button></a>-->
                 </div>
                 <div class="table-responsive">
                   <table class="table align-items-center table-flush">
@@ -35,54 +35,39 @@
                         <th scope="col">Tanggal Terbit</th>
                         <th scope="col">Nama</th>
                         <th width="30%" scope="col">Keterangan</th>
+                        <th scope="col">Status</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len_list)%}
                       <tr>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">NBL-000001</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
+                              <span class="mb-0 text-sm">{{list_memorandum[i].memo_number}}</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
                             </div>
                           </div>
                         </th>
                           <td>
-                          12 Mei 2020
+                          {{list_memorandum[i].memo_date}}
                         </td>
                         <td>
-                          Rani
+                          {{list_memorandum[i].user.fullname}}
                         </td>
                         <td>
-                          Beli Dori 2x5 100kg
+                          {{list_memorandum[i].description}}
+                        </td>
+                        <td>
+                          {{list_memorandum[i].status}}
                         </td>
                         <td class="text-right">
                             <a href="/detail_memorandum"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">NJL-000001</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          13 Mei 2020
-                        </td>
-                        <td>
-                          Rebkley Tri Martuko
-                        </td>
-                        <td>
-                          Jalan Panglima Sudirman Gang 2 No 22. 082257125486
-                        </td>
-                        <td class="text-right">
-                            <a href="/detail_memorandum"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
-                        </td>
-                      </tr>
+                    {%endfor%}
                     <!--          End List          -->
 
                     </tbody>
