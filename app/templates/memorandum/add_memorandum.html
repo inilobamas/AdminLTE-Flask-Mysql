@@ -75,41 +75,7 @@
                     <tbody id="memorandumTableTbody">
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">1</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          PD-000001
-                        </td>
-                        <td>
-                          Dori 2x5
-                        </td>
-                        <td>
-                          100kg
-                        </td>
-                        <td>
-                          Rp. 50.000
-                        </td>
-                        <td>
-                          Rp. 5.000.000
-                        </td>
-                        <td class="text-right">
-                            <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a class="dropdown-item" href="#">Tambah</a>
-                              <a onclick="DeleteMemorandum(this)" class="dropdown-item">Hapus</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+                    <!--  Use function  -->
                     <!--          End List          -->
 
                     </tbody>
@@ -118,9 +84,9 @@
                         <th scope="col">Total</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
-                        <th scope="col">200kg</th>
+                          <th scope="col"><a id="totalAmountMemorandum">0</a> kg</th>
                         <th scope="col"></th>
-                        <th scope="col">Rp. 11.500.000</th>
+                        <th scope="col">Rp. <a id="totalMemorandum">0</a></th>
                         <th scope="col"></th>
                       </tr>
                     </tfoot>
@@ -153,15 +119,17 @@
             <div class="modal-body">
                 <form role="form">
                     <div class="form-group">
-                        <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
-                        <select class="form-control" id="addCategoryProduct">
-                          <option>Test</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="recipient-category-product" class="control-label">Nama Produk:</label>
                         <select class="form-control" id="addProductDetailMemorandum">
-                          <option>Test</option>
+                            <option value="pilih" selected>Pilih</option>
+
+                            {%for i in range(0, len_product)%}
+                                {% if list_product[i].stock_amount != None %}
+                                    <option value="{{list_product[i].id}}">{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
+                                {% else %}
+                                    <option value="{{list_product[i].id}}" disabled>{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
+                                {% endif %}
+                            {%endfor%}
                         </select>
                     </div>
                     <div class="form-group">
@@ -211,6 +179,12 @@
 }
 </style>
 <script>
+
+   function ChangeProduct(){
+    var addCategoryProduct = document.getElementById("addCategoryProduct").value;
+    console.log("addCategoryProduct", addCategoryProduct)
+   }
+
   function ConfirmDeleteMemorandum(elm){
     localStorage.setItem('deleteMemorandumRow', elm);
     $('#deleteModalMemorandum').modal();
@@ -219,6 +193,11 @@
   function DeleteMemorandum() {
     document.getElementById("memorandumTableTbody").deleteRow(localStorage.getItem('deleteMemorandumRow'));
     $('#deleteModalMemorandum').modal('hide');
+
+    var count = document.getElementById("span_number_memorandum");
+    $(".span_number_memorandum").each(function (i){
+        $(this).text(i+1);
+    });
   }
 
 function InsertMemorandum() {
@@ -234,26 +213,11 @@ function InsertMemorandum() {
     var product_id = $('#addProductDetailMemorandum').val()
     var amount = $('#addAmountDetailMemorandum').val()
 
-    var newTr = '<tr><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + 'PD-000002' + '</td><td>' + 'Dori 3x1' + '</td><td>' + '50kg' + '</td><td>' + 'Rp. 40.000' + '</td><td>' + 'Rp. 2.000.000' + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td></tr>'
+    var newTr = '<tr><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="span_number_memorandum" class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + 'PD-000002' + '</td><td>' + 'Dori 3x1' + '</td><td>' + '50kg' + '</td><td>' + 'Rp. 40.000' + '</td><td>' + 'Rp. 2.000.000' + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td></tr>'
 
     $('#memorandumTable').append(newTr);
     $('#addModalMemorandum').modal('hide');
-
-
 }
-
-<!--function addItem() {-->
-<!--  var table = document.getElementById("myTable");-->
-<!--  var row = table.insertRow(0);-->
-<!--  var cell1 = row.insertCell(0);-->
-<!--  var cell2 = row.insertCell(1);-->
-<!--  cell1.innerHTML = "NEW CELL1";-->
-<!--  cell2.innerHTML = "NEW CELL2";-->
-<!--}-->
-
-<!--function removeItem() {-->
-<!--  document.getElementById("myTable").deleteRow(0);-->
-<!--}-->
 </script>
 
 {% endblock content %}
