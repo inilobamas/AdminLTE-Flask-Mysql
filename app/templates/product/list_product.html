@@ -30,11 +30,9 @@
                   <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
-                          <th scope="col">Kode Produk Mentah</th>
-                          <th scope="col">Nama Produk Mentah</th>
-                        <th scope="col">Kode Produk</th>
+                          <th scope="col">Kode Produk</th>
+                          <th scope="col">Nama Produk</th>
                           <th scope="col">Nama Kategori Produk</th>
-                        <th scope="col">Nama Produk</th>
                         <th width="40%" scope="col">Deskripsi</th>
                           <th width="col" scope="col">Stok (kg)</th>
                         <th scope="col">Harga (per kg)</th>
@@ -46,16 +44,6 @@
                     <!-- For loop logic of jinja template -->
                     {%for i in range(0, len_list)%}
                       <tr>
-                          <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">{{list_product[i].product_raw_code}}</span>
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          {{list_product[i].product_raw_name}}
-                        </td>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
@@ -63,11 +51,11 @@
                             </div>
                           </div>
                         </th>
-                          <td>
-                          {{list_product[i]['category_product_name']}}
-                        </td>
-                          <td>
+                        <td>
                           {{list_product[i].product_name}}
+                        </td>
+                        <td>
+                          {{list_product[i]['category_product_name']}}
                         </td>
                         <td>
                           {{list_product[i].product_description}}
@@ -145,14 +133,6 @@
                         <input type="text" class="form-control" id="addCodeProduct" disabled value="">
                     </div>
                     <div class="form-group">
-                        <label for="recipient-product-raw" class="control-label">Nama Produk Mentah:</label>
-                        <select class="form-control" id="addProductRaw">
-                            {%for i in range(0, len_product_raw)%}
-                                <option value="{{dropdown_product_raw[i].id}}">{{dropdown_product_raw[i].product_raw_name}}</option>
-                            {%endfor%}
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
                         <select class="form-control" id="addCategoryProduct">
                             {%for i in range(0, len_dropdown_category_product)%}
@@ -197,14 +177,6 @@
                     <div class="form-group">
                         <label for="recipient-code-product" class="control-label">Kode Produk:</label>
                         <input type="text" class="form-control" id="editCodeProduct" value="" disabled>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-product-raw" class="control-label">Nama Produk Mentah:</label>
-                        <select class="form-control" id="editProductRaw">
-                            {%for i in range(0, len_product_raw)%}
-                                <option value="{{dropdown_product_raw[i].id}}" selected="">{{dropdown_product_raw[i].product_raw_name}}</option>
-                            {%endfor%}
-                        </select>
                     </div>
                     <div class="form-group">
                         <label for="recipient-category-product" class="control-label">Nama Kategori Produk:</label>
@@ -304,7 +276,6 @@ function EditProduct(elm){
 			data : {id:$(elm).attr('data-id')},
 			type : 'POST',
 			success: function(res){
-			    $('#editProductRaw').val(res.product_raw_id);
 				$('#editCategoryProduct').val(res.category_product_id);
 				$('#editCodeProduct').val(res.product_code);
 				$('#editNameProduct').val(res.product_name);
@@ -332,7 +303,6 @@ function InsertProduct() {
     $.ajax({
         url: '/insertProduct',
         data: {
-            product_raw_id: $('#addProductRaw').val(),
             category_product_id: $('#addCategoryProduct').val(),
             product_code: $('#addCodeProduct').val(),
             product_name: $('#addNameProduct').val(),
@@ -367,7 +337,6 @@ function UpdateProduct() {
     $.ajax({
         url: '/updateProduct',
         data: {
-            product_raw_id: $('#editProductRaw').val(),
             category_product_id: $('#editCategoryProduct').val(),
             product_code: $('#editCodeProduct').val(),
             product_name: $('#editNameProduct').val(),

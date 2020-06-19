@@ -34,7 +34,7 @@
                   </table>
                   <div>
                       <div class="card-body border-0">
-                        <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NBL-000001</h4>
+                        <h4 class="mb-0"><a href="#" id="addMemoNumberMemorandum">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NBL-000001</h4>
                         <br>
                         <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 12 Mei 2020 11:02:12</h4>
                         <br>
@@ -60,7 +60,7 @@
                     <a data-toggle="modal" data-target="#addModalMemorandum"> <button type="button" class="btn btn-sm btn-primary">Tambah Item <i class="ni ni-fat-add text-white"></i></button></a>
                   </div>
 
-                  <table class="table align-items-center table-flush">
+                  <table class="table align-items-center table-flush" id="memorandumTable">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">No</th>
@@ -72,7 +72,7 @@
                         <th scope="col"></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="memorandumTableTbody">
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
                       <tr>
@@ -105,77 +105,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                               <a class="dropdown-item" href="#">Tambah</a>
-                              <a onclick="ConfirmDeleteProduct()" data-toggle="modal" data-target="#deleteModalMemorandum" class="dropdown-item">Hapus</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">2</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          PD-000002
-                        </td>
-                        <td>
-                          Dori 3x1
-                        </td>
-                        <td>
-                          50kg
-                        </td>
-                        <td>
-                          Rp. 40.000
-                        </td>
-                        <td>
-                          Rp. 2.000.000
-                        </td>
-                        <td class="text-right">
-                            <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a class="dropdown-item" href="#">Tambah</a>
-                              <a onclick="ConfirmDeleteProduct()" data-toggle="modal" data-target="#deleteModalMemorandum" class="dropdown-item">Hapus</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">3</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          PD-000003
-                        </td>
-                        <td>
-                          Dori 3x5
-                        </td>
-                        <td>
-                          50kg
-                        </td>
-                        <td>
-                          Rp. 90.000
-                        </td>
-                        <td>
-                          Rp. 4.500.000
-                        </td>
-                        <td class="text-right">
-                            <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a class="dropdown-item" href="#">Tambah</a>
-                              <a onclick="ConfirmDeleteProduct()" data-toggle="modal" data-target="#deleteModalMemorandum" class="dropdown-item">Hapus</a>
+                              <a onclick="DeleteMemorandum(this)" class="dropdown-item">Hapus</a>
                             </div>
                           </div>
                         </td>
@@ -229,16 +159,14 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="recipient-name-product" class="control-label">Nama Produk:</label>
-                        <input type="text" class="form-control" id="addNameProduct">
+                        <label for="recipient-category-product" class="control-label">Nama Produk:</label>
+                        <select class="form-control" id="addProductDetailMemorandum">
+                          <option>Test</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="recipient-description" class="control-label">Deskripsi:</label>
-                        <textarea class="form-control" id="addDescription"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-price" class="control-label">Harga (per kg):</label>
-                        <input class="form-control" id="addPrice"></input>
+                        <label for="recipient-amount" class="control-label">Jumlah (per kg):</label>
+                        <input class="form-control" id="addAmountDetailMemorandum"></input>
                     </div>
                 </form>
             </div>
@@ -263,7 +191,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary" onclick="">Hapus</button>
+                <button type="button" class="btn btn-primary" onclick="DeleteMemorandum()">Hapus</button>
             </div>
         </div>
     </div>
@@ -284,8 +212,34 @@
 </style>
 <script>
   function ConfirmDeleteMemorandum(elm){
-<!--    localStorage.setItem('deleteUserID', $(elm).attr('data-id'));-->
+    localStorage.setItem('deleteMemorandumRow', elm);
     $('#deleteModalMemorandum').modal();
+  }
+
+  function DeleteMemorandum() {
+    document.getElementById("memorandumTableTbody").deleteRow(localStorage.getItem('deleteMemorandumRow'));
+    $('#deleteModalMemorandum').modal('hide');
+  }
+
+function InsertMemorandum() {
+    var count = document.getElementById("memorandumTableTbody").getElementsByTagName("tr").length;
+    var number = count + 1
+
+    <!--Memorandum-->
+    var memo_number = $('#addMemoNumberMemorandum').val()
+    var user_id = $('#addUserMemorandum').val()
+    var description = $('#addDescriptionMemorandum').val()
+
+    <!--Detail Memorandum-->
+    var product_id = $('#addProductDetailMemorandum').val()
+    var amount = $('#addAmountDetailMemorandum').val()
+
+    var newTr = '<tr><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + 'PD-000002' + '</td><td>' + 'Dori 3x1' + '</td><td>' + '50kg' + '</td><td>' + 'Rp. 40.000' + '</td><td>' + 'Rp. 2.000.000' + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td></tr>'
+
+    $('#memorandumTable').append(newTr);
+    $('#addModalMemorandum').modal('hide');
+
+
 }
 
 <!--function addItem() {-->

@@ -70,7 +70,6 @@ class CategoryProduct(UserMixin, BaseModel):
 
 # Product
 class Product(UserMixin, BaseModel):
-    product_raw_id = IntegerField()
     category_product_id = IntegerField()
     product_code = CharField()
     product_name = CharField()

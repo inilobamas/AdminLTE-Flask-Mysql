@@ -21,7 +21,6 @@ def functionGetProduct():
     if request.method == 'POST' and form.validate_on_submit():
         product_query = "SELECT " \
                         "t1.id AS product_id, " \
-                        "t1.product_raw_id AS product_raw_id, " \
                         "t1.category_product_id AS category_product_id, " \
                         "t1.product_code AS product_code, " \
                         "t1.product_name AS product_name, " \
@@ -38,15 +37,6 @@ def functionGetProduct():
                         "t2.created_by AS category_product_created_by, " \
                         "t2.updated_at AS category_product_updated_at, " \
                         "t2.updated_by AS category_product_updated_by, " \
-                        "t3.id AS product_raw_id, " \
-                        "t3.product_raw_code AS product_raw_code, " \
-                        "t3.product_raw_name AS product_raw_name, " \
-                        "t3.product_raw_description AS product_raw_description, " \
-                        "t3.amount AS product_raw_amount, " \
-                        "t3.created_at AS product_raw_created_at, " \
-                        "t3.created_by AS product_raw_created_by, " \
-                        "t3.updated_at AS product_raw_updated_at, " \
-                        "t3.updated_by AS product_raw_updated_by, " \
                         "t4.id AS stock_id, " \
                         "t4.product_id AS stock_product_id, " \
                         "t4.amount AS stock_amount, " \
@@ -56,7 +46,6 @@ def functionGetProduct():
                         "t4.updated_by AS stock_updated_by " \
                         "FROM product AS t1 " \
                         "INNER JOIN categoryproduct AS t2 ON (t2.id = t1.category_product_id) " \
-                        "INNER JOIN productraw AS t3 ON (t3.id = t1.product_raw_id) " \
                         "LEFT JOIN stock AS t4 ON (t4.product_id = t1.id) " \
                         "WHERE " \
                         "product.product_code LIKE '%" + form.search.data + "%' or" \
@@ -66,7 +55,6 @@ def functionGetProduct():
     else:
         product_query = "SELECT " \
                         "t1.id AS product_id, " \
-                        "t1.product_raw_id AS product_raw_id, " \
                         "t1.category_product_id AS category_product_id, " \
                         "t1.product_code AS product_code, " \
                         "t1.product_name AS product_name, " \
@@ -83,15 +71,6 @@ def functionGetProduct():
                         "t2.created_by AS category_product_created_by, " \
                         "t2.updated_at AS category_product_updated_at, " \
                         "t2.updated_by AS category_product_updated_by, " \
-                        "t3.id AS product_raw_id, " \
-                        "t3.product_raw_code AS product_raw_code, " \
-                        "t3.product_raw_name AS product_raw_name, " \
-                        "t3.product_raw_description AS product_raw_description, " \
-                        "t3.amount AS product_raw_amount, " \
-                        "t3.created_at AS product_raw_created_at, " \
-                        "t3.created_by AS product_raw_created_by, " \
-                        "t3.updated_at AS product_raw_updated_at, " \
-                        "t3.updated_by AS product_raw_updated_by, " \
                         "t4.id AS stock_id, " \
                         "t4.product_id AS stock_product_id, " \
                         "t4.amount AS stock_amount, " \
@@ -101,7 +80,6 @@ def functionGetProduct():
                         "t4.updated_by AS stock_updated_by " \
                         "FROM product AS t1 " \
                         "INNER JOIN categoryproduct AS t2 ON (t2.id = t1.category_product_id) " \
-                        "INNER JOIN productraw AS t3 ON (t3.id = t1.product_raw_id) " \
                         "LEFT JOIN stock AS t4 ON (t4.product_id = t1.id);"
 
         cursor = db.execute_sql(product_query)
@@ -110,12 +88,10 @@ def functionGetProduct():
 
 
     category_product = CategoryProduct.select().execute()
-    product_raw = ProductRaw.select().execute()
 
     return render_template('product/list_product.html', current_user=current_user, form=form, len_list=len(product),
                            list_product=product, len_dropdown_category_product=len(category_product),
-                           dropdown_category_product=category_product, len_product_raw=len(product_raw),
-                           dropdown_product_raw=product_raw)
+                           dropdown_category_product=category_product)
 
 
 # Get Product
@@ -127,7 +103,6 @@ def functionGetProductByID():
     product = Product.get_by_id(id)
 
     product_row = {
-        "product_raw_id": product.product_raw_id,
         "category_product_id": product.category_product_id,
         "product_code": product.product_code,
         "product_name": product.product_name,
@@ -162,7 +137,6 @@ def functionInsertProduct():
         "message": "Success"
     }
 
-    product_raw_id = request.form['product_raw_id']
     category_product_id = request.form['category_product_id']
     product_code = request.form['product_code']
     product_name = request.form['product_name']
@@ -174,6 +148,7 @@ def functionInsertProduct():
             product_code=product_code,
             product_name=product_name,
             description=description,
+            category_product_id=category_product_id,
             price=price,
             created_by=current_user.id,
             created_at=datetime.datetime.now()
