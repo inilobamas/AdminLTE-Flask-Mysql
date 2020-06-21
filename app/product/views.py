@@ -112,6 +112,56 @@ def functionGetProductByID():
 
     return product_row
 
+# Get Detail Product
+@product.route('/getDetailProductByID', methods=['POST'])
+@login_required
+def functionGetDetailProductByID():
+    id = request.form['id']
+    print("ID PRODUCT", id)
+    # Get User By ID
+    # product = Product.get_by_id(id)
+
+    product_query = "SELECT " \
+                    "t1.id AS product_id, " \
+                    "t1.category_product_id AS category_product_id, " \
+                    "t1.product_code AS product_code, " \
+                    "t1.product_name AS product_name, " \
+                    "t1.description AS product_description, " \
+                    "t1.price AS product_price, " \
+                    "t1.created_at AS product_created_at, " \
+                    "t1.created_by AS product_created_by, " \
+                    "t1.updated_at AS product_updated_at, " \
+                    "t1.updated_by AS product_updated_by, " \
+                    "t2.id AS category_product_id, " \
+                    "t2.category_product_name AS category_product_name, " \
+                    "t2.category_product_description AS category_product_description, " \
+                    "t2.created_at AS category_product_created_at, " \
+                    "t2.created_by AS category_product_created_by, " \
+                    "t2.updated_at AS category_product_updated_at, " \
+                    "t2.updated_by AS category_product_updated_by, " \
+                    "t4.id AS stock_id, " \
+                    "t4.product_id AS stock_product_id, " \
+                    "t4.amount AS stock_amount, " \
+                    "t4.created_at AS stock_created_at, " \
+                    "t4.created_by AS stock_created_by, " \
+                    "t4.updated_at AS stock_updated_at, " \
+                    "t4.updated_by AS stock_updated_by " \
+                    "FROM product AS t1 " \
+                    "INNER JOIN categoryproduct AS t2 ON (t2.id = t1.category_product_id) " \
+                    "LEFT JOIN stock AS t4 ON (t4.product_id = t1.id)" \
+                    "WHERE t1.id = " + id + ";"
+
+    print("product_query", product_query)
+
+    cursor = db.execute_sql(product_query)
+    col_names = [col[0] for col in cursor.description]
+    product = [dict(zip(col_names, row)) for row in cursor.fetchall()]
+
+    if product is not None:
+        return product[0]
+    else:
+        print("ERROR")
+
 
 # Get Latest Product Code
 @product.route('/getProductCode', methods=['POST'])

@@ -35,6 +35,8 @@
                         <th scope="col">Tanggal Terbit</th>
                         <th scope="col">Nama</th>
                         <th width="30%" scope="col">Keterangan</th>
+                        <th scope="col">Jumlah (kg)</th>
+                        <th scope="col">Total</th>
                         <th scope="col">Status</th>
                         <th scope="col"></th>
                       </tr>
@@ -61,10 +63,16 @@
                           {{list_memorandum[i].description}}
                         </td>
                         <td>
+                          {{list_memorandum[i].total_amount}}
+                        </td>
+                        <td>
+                          Rp. {{list_memorandum[i].total_price}}
+                        </td>
+                        <td>
                           {{list_memorandum[i].status}}
                         </td>
                         <td class="text-right">
-                            <a href="/detail_memorandum"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
+                            <a href="/detail_memorandum?id={{list_memorandum[i].id}}"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
                         </td>
                       </tr>
                     {%endfor%}

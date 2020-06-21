@@ -34,9 +34,9 @@
                   </table>
                   <div>
                       <div class="card-body border-0">
-                        <h4 class="mb-0"><a href="#" id="addMemoNumberMemorandum">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NBL-000001</h4>
+                        <h4 class="mb-0" id="addMemoNumberMemorandum"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{memorandumCode}}</h4>
                         <br>
-                        <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 12 Mei 2020 11:02:12</h4>
+                        <h4 class="mb-0" id="addDateMemorandum"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{timeNow}}</h4>
                         <br>
                         <div class="form-group">
                           <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a></h4>
@@ -69,6 +69,7 @@
                         <th scope="col">Jumlah</th>
                         <th scope="col">Harga</th>
                         <th scope="col">Total</th>
+                        <th scope="col" style="display:none;">Product ID</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
@@ -96,7 +97,7 @@
                   <nav aria-label="...">
                     <ul class="pagination justify-content-end mb-0">
                       <li class="page-item active">
-                        <button type="button" class="btn btn-primary"><a>Proses</a></button>
+                        <button onclick="SaveMemorandum()" type="button" class="btn btn-primary"><a>Proses</a></button>
                       </li>
                     </ul>
                   </nav>
@@ -125,9 +126,9 @@
 
                             {%for i in range(0, len_product)%}
                                 {% if list_product[i].stock_amount != None %}
-                                    <option value="{{list_product[i].id}}">{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
+                                    <option value="{{list_product[i].product_id}}">{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
                                 {% else %}
-                                    <option value="{{list_product[i].id}}" disabled>{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
+                                    <option value="{{list_product[i].product_id}}" disabled>{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
                                 {% endif %}
                             {%endfor%}
                         </select>
@@ -179,46 +180,134 @@
 }
 </style>
 <script>
+    function SaveMemorandum(){
+        var array = [];
+        var headers = [];
+        $('#memorandumTable th').each(function(index, item) {
+            headers[index] = $(item).html();
+        });
+        $('#memorandumTable tr').has('td').each(function() {
+            var arrayItem = {};
+            $('td', $(this)).each(function(index, item) {
+                arrayItem[headers[index]] = $(item).html();
+            });
+            array.push(arrayItem);
+        });
 
-   function ChangeProduct(){
-    var addCategoryProduct = document.getElementById("addCategoryProduct").value;
-    console.log("addCategoryProduct", addCategoryProduct)
-   }
+        var listDetailMemorandum = [];
+        var i;
+        for (i = 0; i < array.length; i++) {
+          var product_id = array[i]["Product ID"]
+          var amount = array[i]["Nama Produk"]
 
-  function ConfirmDeleteMemorandum(elm){
-    localStorage.setItem('deleteMemorandumRow', elm);
-    $('#deleteModalMemorandum').modal();
-  }
+           <!--      TODO: MASUKKAN MEMORANDUM      -->
+          var arrayDetailMemorandum = {
+            "product_id": product_id,
+            "amount": amount
+          }
 
-  function DeleteMemorandum() {
-    document.getElementById("memorandumTableTbody").deleteRow(localStorage.getItem('deleteMemorandumRow'));
-    $('#deleteModalMemorandum').modal('hide');
+          listDetailMemorandum.push(arrayDetailMemorandum)
+        }
 
-    var count = document.getElementById("span_number_memorandum");
-    $(".span_number_memorandum").each(function (i){
-        $(this).text(i+1);
-    });
-  }
+        <!--Memorandum-->
+        var memo_number = document.getElementById("addMemoNumberMemorandum").text;
+        var user_id = $('#addUserMemorandum').val()
+        var description = $('#addDescriptionMemorandum').val()
+        var date = $('#addDateMemorandum').val()
+        var totalMemorandum = document.getElementById("totalMemorandum").text;
+        totalMemorandum = totalMemorandum.replace(/\./g,'')
 
-function InsertMemorandum() {
-    var count = document.getElementById("memorandumTableTbody").getElementsByTagName("tr").length;
-    var number = count + 1
+        <!--    Inserting Table    -->
+        $.ajax({
+            url: '/insertMemorandumAndDetailMemorandum',
+            data: JSON.stringify({
+                memo_number: memo_number,
+                user_id: user_id,
+                description: description,
+                date: date,
+                detailMemorandum: listDetailMemorandum
+            }),
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            success: function(res) {
+                console.log("res memorandum", res);
 
-    <!--Memorandum-->
-    var memo_number = $('#addMemoNumberMemorandum').val()
-    var user_id = $('#addUserMemorandum').val()
-    var description = $('#addDescriptionMemorandum').val()
+                // Re populate the grid
+                setTimeout(function(){
+                    window.location.href = "/memorandum";
+                 }, 1000);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        })
+    }
 
-    <!--Detail Memorandum-->
-    var product_id = $('#addProductDetailMemorandum').val()
-    var amount = $('#addAmountDetailMemorandum').val()
+    function ChangeProduct(){
+        var addCategoryProduct = document.getElementById("addCategoryProduct").value;
+    }
 
-    var newTr = '<tr><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="span_number_memorandum" class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + 'PD-000002' + '</td><td>' + 'Dori 3x1' + '</td><td>' + '50kg' + '</td><td>' + 'Rp. 40.000' + '</td><td>' + 'Rp. 2.000.000' + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td></tr>'
+    function ConfirmDeleteMemorandum(elm){
+        localStorage.setItem('deleteMemorandumRow', elm);
+        $('#deleteModalMemorandum').modal();
+    }
 
-    $('#memorandumTable').append(newTr);
-    $('#addModalMemorandum').modal('hide');
-}
+    function DeleteMemorandum() {
+        elm = localStorage.getItem('deleteMemorandumRow')
+
+        var count = document.getElementById("span_number_memorandum");
+        $(".span_number_memorandum").each(function (i){
+            $(this).text(i+1);
+        });
+
+        var amount = $(".trItem .amount")[elm].innerText.replace("kg", '');
+        var total = $(".trItem .total")[elm].innerText.replace("Rp. ", '').replace(/\./g,'');
+
+        var totalAmountMemorandum = document.getElementById("totalAmountMemorandum").text;
+        var totalMemorandum = document.getElementById("totalMemorandum").text;
+
+        totalAmountMemorandum = parseInt(totalAmountMemorandum) - parseInt(amount)
+        document.getElementById("totalAmountMemorandum").text = totalAmountMemorandum
+
+        totalMemorandum = parseInt(totalMemorandum) - parseInt(total)
+        document.getElementById("totalMemorandum").text = totalMemorandum
+
+        document.getElementById("memorandumTableTbody").deleteRow(elm);
+        $('#deleteModalMemorandum').modal('hide');
+    }
+
+    function InsertMemorandum() {
+        var count = document.getElementById("memorandumTableTbody").getElementsByTagName("tr").length;
+        var number = count + 1;
+
+        var product_id = $('#addProductDetailMemorandum').val();
+        var amount = $('#addAmountDetailMemorandum').val();
+        $.ajax({
+            url : '/getDetailProductByID',
+            data : {id:product_id},
+            type : 'POST',
+            success: function(res){
+                var newTr = '<tr class="trItem"><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="span_number_memorandum" class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + res.product_code + '</td><td>' + res.product_name + '</td><td class="amount">' + amount + '</td><td class="price">' + 'Rp. ' + res.product_price + '</td><td class="total">' + 'Rp. ' + (amount * res.product_price) + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td><td id="idMemorandum" style="display:none">' + res.product_id + '</td></tr>';
+
+                $('#memorandumTable').append(newTr);
+                $('#addModalMemorandum').modal('hide');
+
+                var totalAmountMemorandum = document.getElementById("totalAmountMemorandum").text;
+                var totalMemorandum = document.getElementById("totalMemorandum").text;
+
+                totalAmountMemorandum = parseInt(totalAmountMemorandum) + parseInt(amount)
+                document.getElementById("totalAmountMemorandum").text = totalAmountMemorandum
+
+                totalMemorandum = parseInt(totalMemorandum) + (amount * res.product_price)
+                document.getElementById("totalMemorandum").text = totalMemorandum
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+    }
 </script>
+</style>
 
 {% endblock content %}
 

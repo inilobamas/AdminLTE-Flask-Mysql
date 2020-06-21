@@ -108,6 +108,8 @@ class Memorandum(UserMixin, BaseModel):
     memo_date = DateTimeField()
     user_id = IntegerField()
     description = CharField(null=True)
+    total_amount = IntegerField()
+    total_price = IntegerField()
     status = IntegerField() # 1 = pembelian 2 = penjualan
     created_at = DateTimeField()
     created_by = IntegerField()

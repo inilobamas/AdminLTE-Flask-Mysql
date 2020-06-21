@@ -23,11 +23,9 @@
 
               <div class="card shadow">
                 <div class="card-header border-0">
-                    <h3 class="mb-0"><a href="/memorandum">Daftar Nota</a> - Detail Nota</h3>
-                    <h5 class="mb-0"><a href="#">Terakhir diubah </a> 13 Mei 2020</h5>
-<!--                  <a data-toggle="modal" data-target="#addModalStok"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-fat-add text-white"></i></button></a>-->
+                    <h3 class="mb-0"><a href="/memorandum">Daftar Nota</a> - Tambah Nota Penjualan</h3>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive" id="printableArea">
                   <table class="table align-items-center table-flush">
                     <tbody>
                       <tr>
@@ -35,18 +33,29 @@
                     </tbody>
                   </table>
                   <div>
-                    <div class="card-body border-0">
-                      <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> NJL-000001</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> 13 Mei 2020</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> Rebkley Tri Martuko</h4>
-                      <br>
-                      <h4 class="mb-0 left"><a href="#">Keterangan&nbsp;:&nbsp;</a> Jalan Panglima Sudirman Gang 2 No 22</h4>
-<!--                      <h4 class="mb-0 right"><a href="#">Terakhir diubah&nbsp;:&nbsp;</a> 12 Mei 2020</h4>-->
+                      <div class="card-body border-0">
+                        <h4 class="mb-0" id="addMemoNumberMemorandum"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{memorandum.memo_number}}</h4>
+                        <br>
+                        <h4 class="mb-0" id="addDateMemorandum"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{memorandum.memo_date}}</h4>
+                        <br>
+                        <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{user.fullname}}</h4>
+
+                      </div>
+                      <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a></h4>
+                          <br>
+                          <textarea class="form-control" id="addDescriptionMemorandum">{{memorandum.description}}</textarea>
+                      </div>
                     </div>
                   </div>
-                  <table class="table align-items-center table-flush">
+
+                  <div style="margin-left:1%" class="form-group">
+                    <!--                  onclick="GetProductCode()"-->
+                    <a data-toggle="modal"> <button type="button" class="btn btn-sm btn-primary">Daftar Item </button></a>
+                  </div>
+
+                  <table class="table align-items-center table-flush" id="memorandumTable">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">No</th>
@@ -55,48 +64,31 @@
                         <th scope="col">Jumlah</th>
                         <th scope="col">Harga</th>
                         <th scope="col">Total</th>
+                        <th scope="col" style="display:none;">Product ID</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="memorandumTableTbody">
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="mb-0 text-sm">1</span>  <!-- NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran -->
-                            </div>
-                          </div>
-                        </th>
-                          <td>
-                          PD-000001
-                        </td>
-                        <td>
-                          Dori 2x5
-                        </td>
-                        <td>
-                            5kg
-                        </td>
-                        <td>
-                          Rp. 50.000
-                        </td>
-                        <td>
-                          Rp. 250.000
-                        </td>
-                        <td class="text-right">
-                            <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a class="dropdown-item" href="#">Tambah</a>
-                              <a onclick="ConfirmDeleteProduct()" data-toggle="modal" data-target="#deleteModalMemorandum" class="dropdown-item">Hapus</a>
-                            </div>
-                          </div>
-                        </td>
+                    {%for i in range(0, len_detail_memorandum)%}
+                      <tr class="trItem">
+                          <th scope="row">
+                              <div class="media align-items-center">
+                                  <div class="media-body">
+                                      <span class="span_number_memorandum" class="mb-0 text-sm">1</span>
+                                  </div>
+                              </div>
+                          </th>
+                          <td>{{detail_memorandum[i].product_id}}</td>
+                          <td>{{detail_memorandum[i].product.product_name}}</td>
+                          <td class="amount">{{detail_memorandum[i].amount}}</td>
+                          <td class="price">Rp. {{detail_memorandum[i].product.price}}</td>
+                          <td class="total">Rp. {{detail_memorandum[i].detail_total}}</td>
                       </tr>
+                    <!--  Use function  -->
                     <!--          End List          -->
+                    {%endfor%}
 
                     </tbody>
                     <tfoot class="thead-light">
@@ -104,9 +96,9 @@
                         <th scope="col">Total</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
-                        <th scope="col">5kg</th>
+                          <th scope="col"><a id="totalAmountMemorandum">{{memorandum.total_amount}}</a> kg</th>
                         <th scope="col"></th>
-                        <th scope="col">Rp.   250.000</th>
+                        <th scope="col">Rp. <a id="totalMemorandum">{{memorandum.total_price}}</a></th>
                         <th scope="col"></th>
                       </tr>
                     </tfoot>
@@ -115,20 +107,8 @@
                 <div class="card-footer py-4">
                   <nav aria-label="...">
                     <ul class="pagination justify-content-end mb-0">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="" tabindex="-1">
-                          <i class="fas fa-angle-left"></i>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                      </li>
                       <li class="page-item active">
-                        <a class="page-link" href="">All</a>
-                      </li>
-                      <li class="page-item disabled">
-                        <a class="page-link" href="">
-                          <i class="fas fa-angle-right"></i>
-                          <span class="sr-only">Next</span>
-                        </a>
+                        <button onclick="PrintMemorandum('printableArea')" type="button" class="btn btn-primary"><a>Print</a></button>
                       </li>
                     </ul>
                   </nav>
@@ -136,31 +116,8 @@
               </div>
             </div>
           </div>
-
-
-
         {% include "site_template/footer.html" %}
-
     </div>
-
-<!-- Delete Modal Memorandum -->
-<div class="modal fade" id="deleteModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="deleteModalMemorandumLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-<!--            <div class="modal-header" style="text-align:center;">-->
-<!--                <h4 class="modal-title" style="color:red;" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h4>-->
-<!--            </div>-->
-                <div class="card-header border-0">
-                  <h3 class="mb-0" id="deleteModalProductLabel">Apa anda yakin menghapus data ini?</h3>
-                </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary" onclick="">Hapus</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <style>
@@ -176,10 +133,18 @@
 }
 </style>
 <script>
-  function ConfirmDeleteMemorandum(elm){
-<!--    localStorage.setItem('deleteUserID', $(elm).attr('data-id'));-->
-    $('#deleteModalMemorandum').modal();
-}
+
+    function PrintMemorandum(divID) {
+        var printContents = document.getElementById(divID).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print()
+
+        document.body.innerHTML = originalContents;
+    }
+
 </script>
 
 {% endblock content %}

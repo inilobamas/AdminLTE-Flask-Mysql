@@ -29,6 +29,9 @@ def create_app(config_name):
 
     login_manager.init_app(app)
 
+    from app.helper import helper as helper_blueprint
+    app.register_blueprint(helper_blueprint)
+
     from app.main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
