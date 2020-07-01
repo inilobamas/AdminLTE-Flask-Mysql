@@ -69,7 +69,11 @@
                           Rp. {{list_memorandum[i].total_price}}
                         </td>
                         <td>
-                          {{list_memorandum[i].status}}
+                          {% if list_memorandum[i].status == 1 %}
+                            <button type="button" class="btn btn-sm btn-success"> Lunas </button>
+                          {% else %}
+                            <button type="button" class="btn btn-sm btn-danger"> Hutang </button>
+                          {% endif %}
                         </td>
                         <td class="text-right">
                             <a href="/detail_memorandum?id={{list_memorandum[i].id}}"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>

@@ -72,7 +72,8 @@
                               <i class="fas fa-ellipsis-v"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                              <a class="dropdown-item" href="#">Tambah</a>
+                                <a class="dropdown-item" href="/detail_product_raw?id={{list_product_raw[i].id}}">Riwayat Produk Mentah</a>
+                              <a class="dropdown-item" href="/product_raw_restock?id={{list_product_raw[i].id}}">Re-stok</a>
                               <a data-id={{list_product_raw[i].id}} onclick="EditProductRaw(this)" data-toggle="modal" data-target="#editModalProductRaw" class="dropdown-item">Ubah</a>
                               <a data-id={{list_product_raw[i].id}} onclick="ConfirmDeleteProductRaw(this)" data-toggle="modal" data-target="#deleteModalProductRaw" class="dropdown-item">Hapus</a>
                             </div>

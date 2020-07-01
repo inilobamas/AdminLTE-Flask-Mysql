@@ -55,7 +55,7 @@
                           {{list_stock[i].stock_amount}}
                         </td>
                         <td class="text-right">
-                            <a href="/detail_stock"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
+                            <a href="/detail_stock?product_id={{list_stock[i].product.product_id}}&stock_id={{list_stock[i].stock_id}}"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
                         </td>
                       </tr>
                     {%endfor%}

@@ -5,6 +5,7 @@ from app.models import Product, CategoryProduct, ProductRaw, Stock
 from flask_login import login_required, current_user
 from peewee import MySQLDatabase, JOIN
 from conf.config import config
+from ..helper.views import formatrupiah
 import os, json, datetime
 
 cfg = config[os.getenv('FLASK_CONFIG') or 'default']
@@ -82,9 +83,12 @@ def functionGetProduct():
                         "INNER JOIN categoryproduct AS t2 ON (t2.id = t1.category_product_id) " \
                         "LEFT JOIN stock AS t4 ON (t4.product_id = t1.id);"
 
-        cursor = db.execute_sql(product_query)
-        col_names = [col[0] for col in cursor.description]
-        product = [dict(zip(col_names, row)) for row in cursor.fetchall()]
+    cursor = db.execute_sql(product_query)
+    col_names = [col[0] for col in cursor.description]
+    product = [dict(zip(col_names, row)) for row in cursor.fetchall()]
+
+    for row in product:
+        row['product_price'] = formatrupiah(row['product_price'])
 
 
     category_product = CategoryProduct.select().execute()
@@ -117,7 +121,6 @@ def functionGetProductByID():
 @login_required
 def functionGetDetailProductByID():
     id = request.form['id']
-    print("ID PRODUCT", id)
     # Get User By ID
     # product = Product.get_by_id(id)
 
@@ -150,8 +153,6 @@ def functionGetDetailProductByID():
                     "INNER JOIN categoryproduct AS t2 ON (t2.id = t1.category_product_id) " \
                     "LEFT JOIN stock AS t4 ON (t4.product_id = t1.id)" \
                     "WHERE t1.id = " + id + ";"
-
-    print("product_query", product_query)
 
     cursor = db.execute_sql(product_query)
     col_names = [col[0] for col in cursor.description]

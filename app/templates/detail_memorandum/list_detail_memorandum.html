@@ -38,10 +38,9 @@
                         <br>
                         <h4 class="mb-0" id="addDateMemorandum"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{memorandum.memo_date}}</h4>
                         <br>
-                        <div class="form-group">
-                          <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{user.fullname}}</h4>
-
-                      </div>
+                    <div class="form-group">
+                        <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{user.fullname}}</h4>
+                    </div>
                       <div class="form-group">
                           <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a></h4>
                           <br>
@@ -51,7 +50,6 @@
                   </div>
 
                   <div style="margin-left:1%" class="form-group">
-                    <!--                  onclick="GetProductCode()"-->
                     <a data-toggle="modal"> <button type="button" class="btn btn-sm btn-primary">Daftar Item </button></a>
                   </div>
 
@@ -76,7 +74,7 @@
                           <th scope="row">
                               <div class="media align-items-center">
                                   <div class="media-body">
-                                      <span class="span_number_memorandum" class="mb-0 text-sm">1</span>
+                                      <span class="span_number_memorandum" class="mb-0 text-sm">{{i+1}}</span>
                                   </div>
                               </div>
                           </th>

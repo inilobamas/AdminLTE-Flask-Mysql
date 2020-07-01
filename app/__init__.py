@@ -50,6 +50,9 @@ def create_app(config_name):
     from app.product_raw import product_raw as product_raw_blueprint
     app.register_blueprint(product_raw_blueprint)
 
+    from app.detail_product_raw import detail_product_raw as detail_product_raw_blueprint
+    app.register_blueprint(detail_product_raw_blueprint)
+
     from app.product import product as product_blueprint
     app.register_blueprint(product_blueprint)
 

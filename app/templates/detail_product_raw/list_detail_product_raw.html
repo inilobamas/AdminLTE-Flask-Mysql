@@ -1,0 +1,156 @@
+{% extends "base_site.html" %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include "site_template/navigation.html" %}
+
+  {% include "site_template/top-stats.html" %}
+
+    <div class="container-fluid mt--7">
+
+      <!-- Table -->
+      <div class="row">
+            <div class="col">
+
+            <div class="" role="alert" id="alert_user">
+            </div>
+
+              <div class="card shadow">
+                <div class="card-header border-0">
+                    <h3 class="mb-0"><a href="/product_raw">Produk Mentah </a> - Riwayat Produk Mentah</h3>
+                </div>
+                <div class="table-responsive" id="printableArea">
+                  <table class="table align-items-center table-flush">
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                      <div class="card-body border-0">
+                        <h4 class="mb-0" id="addCodeProductRaw"><a href="#">Kode Produk Mentah&nbsp;&nbsp;:&nbsp;</a> {{product_raw.product_raw_code}}</h4>
+                        <br>
+                        <h4 class="mb-0" id="addNameProductRaw"><a href="#">Produk Mentah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{product_raw.product_raw_name}}</h4>
+                        <br>
+                        <h4 class="mb-0" id="addDateMemorandum"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{product_raw.created_at}}</h4>
+                        <br>
+                        <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Jumlah (kg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{product_raw.amount}}</h4>
+
+                      </div>
+                      <div class="form-group">
+                          <h4 class="mb-0"><a href="#">Keterangan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a></h4>
+                          <br>
+                          <textarea class="form-control" id="addDescriptionMemorandum">{{product_raw.product_raw_description}}</textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="margin-left:1%" class="form-group">
+                    <!--                  onclick="GetProductCode()"-->
+                    <a data-toggle="modal"> <button type="button" class="btn btn-sm btn-primary">Riwayat Produk Mentah </button></a>
+                  </div>
+
+                  <table class="table align-items-center table-flush" id="memorandumTable">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Produk</th>
+                        <th scope="col">Nama Produk</th>
+                        <th scope="col">Deskripsi</th>
+                        <th scope="col">Jumlah (kg)</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="memorandumTableTbody">
+                    <!--          Start List          -->
+                    <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len_product)%}
+                      <tr class="trItem">
+                          <th scope="row">
+                              <div class="media align-items-center">
+                                  <div class="media-body">
+                                      <span class="span_number_memorandum" class="mb-0 text-sm">{{i+1}}</span>
+                                  </div>
+                              </div>
+                          </th>
+                          <td>{{product[i].product.product_code}}</td>
+                          <td>{{product[i].product.product_name}}</td>
+                          <td class="amount">{{product[i].description}}</td>
+                          <td class="price">{{product[i].amount}}</td>
+                          <td class="total">{{product[i].created_at}}</td>
+                      </tr>
+                    <!--  Use function  -->
+                    <!--          End List          -->
+                    {%endfor%}
+
+                    </tbody>
+                    <tfoot class="thead-light">
+                      <tr>
+                        <th scope="col">Sisa</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">{{product_raw.amount}} kg - {{total}} kg</th>
+                        <th scope="col">{{sisa}} kg</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="card-footer py-4">
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end mb-0">
+                      <li class="page-item active">
+                        <button onclick="PrintMemorandum('printableArea')" type="button" class="btn btn-primary"><a>Print</a></button>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% include "site_template/footer.html" %}
+    </div>
+
+
+<style>
+#left
+{
+    width:10%;
+    float:left;
+}
+#right
+{
+    width:90%;
+    float:right;
+}
+</style>
+<script>
+
+    function PrintMemorandum(divID) {
+        var printContents = document.getElementById(divID).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print()
+
+        document.body.innerHTML = originalContents;
+    }
+
+</script>
+
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super() }}
+
+{% endblock javascripts %}

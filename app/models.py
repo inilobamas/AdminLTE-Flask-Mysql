@@ -59,6 +59,17 @@ class ProductRaw(UserMixin, BaseModel):
     updated_at = DateTimeField(null=True)
     updated_by = IntegerField(null=True)
 
+# Detail Product Raw
+class DetailProductRaw(UserMixin, BaseModel):
+    product_raw_id = IntegerField()
+    product_id = IntegerField()
+    description = CharField(null=True)
+    amount = IntegerField(null=True)
+    created_at = DateTimeField()
+    created_by = IntegerField()
+    updated_at = DateTimeField(null=True)
+    updated_by = IntegerField(null=True)
+
 # CategoryProduct
 class CategoryProduct(UserMixin, BaseModel):
     category_product_name = IntegerField()
@@ -106,11 +117,13 @@ class DetailStock(UserMixin, BaseModel):
 class Memorandum(UserMixin, BaseModel):
     memo_number = CharField()
     memo_date = DateTimeField()
+    memo_end_date = DateTimeField()
     user_id = IntegerField()
     description = CharField(null=True)
     total_amount = IntegerField()
     total_price = IntegerField()
-    status = IntegerField() # 1 = pembelian 2 = penjualan
+    total_remaining = IntegerField()
+    status = IntegerField() # 1 = lunas 2 = hutang
     created_at = DateTimeField()
     created_by = IntegerField()
     updated_at = DateTimeField(null=True)
@@ -158,7 +171,7 @@ def load_user(user_id):
 # Build Table
 def create_table():
     db.connect()
-    db.create_tables([CfgNotify, User, CategoryProduct, Product, Stock, DetailStock, Memorandum, DetailMemorandum, UserAccount, ProductRaw])
+    db.create_tables([CfgNotify, User, CategoryProduct, Product, Stock, DetailStock, Memorandum, DetailMemorandum, UserAccount, ProductRaw, DetailProductRaw])
 
 
 if __name__ == '__main__':

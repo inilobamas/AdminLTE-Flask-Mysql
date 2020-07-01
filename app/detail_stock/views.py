@@ -1,7 +1,7 @@
 from flask import render_template, redirect, request, url_for, flash
 from . import detail_stock
 from .forms import SearchForm
-from app.models import DetailStock, Product
+from app.models import DetailStock, Product, User
 from flask_login import login_required, current_user
 import json, datetime
 
@@ -10,7 +10,7 @@ import json, datetime
 @login_required
 def functionGetDetailStock():
     product_id = request.args.get('product_id')
-    detail_stock_id = request.args.get('stock_id')
+    stock_id = request.args.get('stock_id')
 
     form = SearchForm()
     if request.method == 'POST' and form.validate_on_submit():
@@ -23,9 +23,9 @@ def functionGetDetailStock():
         #         | User.phone.contains(form.search.data)
         #         | User.role.contains(form.search.data)
         #     )
-        detail_stock = DetailStock.select().where(DetailStock.id == detail_stock_id).execute()
+        detail_stock = DetailStock.select(User, DetailStock).join(User, on=(User.id == DetailStock.user_id)).where(DetailStock.stock_id == stock_id).execute()
     else:
-        detail_stock = DetailStock.select().where(DetailStock.id == detail_stock_id).execute()
+        detail_stock = DetailStock.select(User, DetailStock).join(User, on=(User.id == DetailStock.user_id)).where(DetailStock.stock_id == stock_id).execute()
 
     if product_id != "":
         product = Product.get_by_id(product_id)

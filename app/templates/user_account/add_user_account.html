@@ -23,7 +23,7 @@
 
               <div class="card shadow">
                 <div class="card-header border-0">
-                  <h3 class="mb-0"><a href="/user_account">Kartu Piutang - </a>Bayar Piutang</h3>
+                  <h3 class="mb-0"><a href="/user_account?id={{user.id}}">Kartu Piutang - </a>Bayar Piutang</h3>
 <!--                  <a id="" data-toggle="modal" data-target="#addModalStok"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-money-coins text-white"></i></button></a>-->
                 </div>
                 <div class="table-responsive">
@@ -42,11 +42,13 @@
 <!--                  </table>-->
                   <div>
                     <div class="card-body border-0">
-                      <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> PP-000001</h4>
-                      <br>
-                      <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> Rebkley Tri Martuko</h4>
-                      <br>
-                      <h4 class="mb-0 left"><a href="#">Keterangan&nbsp;:&nbsp;</a> Jalan Panglima Sudirman Gang 2 No 22</h4>
+                        <h4 class="mb-0"><a href="#">No Nota&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{user_account_code}}</h4>
+                        <br>
+                        <h4 class="mb-0"><a href="#">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{user.fullname}}</h4>
+                        <br>
+                        <h4 class="mb-0 left"><a href="#">Keterangan&nbsp;:&nbsp;</a></h4>
+                        <br>
+                        <textarea class="form-control" id="addDescriptionUserAccount"></textarea>
                     </div>
                   </div>
                   <table class="table align-items-center table-flush">
@@ -56,40 +58,47 @@
                         <th scope="col">No Nota</th>
                         <th scope="col">Total Nota</th>
                         <th scope="col">Sisa Yang Harus Dibayar</th>
-                        <th scope="col">Dibayar</th>
-<!--                        <th scope="col"></th>-->
+                          <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                     <!--          Start List          -->
                     <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len_list_memorandum)%}
                       <tr>
                         <th scope="row">
                           <div class="media align-items-center">
                             <div class="media-body">
-                              <span class="mb-0 text-sm">13 Mei 2020</span>
+                              <span class="mb-0 text-sm">{{list_memorandum[i].memo_date}}</span>
                             </div>
                           </div>
                         </th>
                           <td>
-                          PD-000001
+                          {{list_memorandum[i].memo_number}}
                         </td>
                         <td>
-                          Rp. 250.000
+                          Rp. {{list_memorandum[i].total_price}}
                         </td>
                         <td>
-                          Rp. 250.000
+                          Rp. {{list_memorandum[i].total_remaining}}
                         </td>
-                        <td>
-                          Rp. 250.000
+                        <td class="text-right">
+                            <a href="/detail_memorandum?id={{list_memorandum[i].id}}"><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-bullet-list-67 text-white"></i></button></a>
                         </td>
-<!--                        <td class="text-right">-->
-<!--                            <a><button type="button" class="btn btn-sm btn-primary"><i class="ni ni-money-coins text-white"></i></button></a>-->
-<!--                        </td>-->
                       </tr>
+                    {%endfor%}
                     <!--          End List          -->
 
                     </tbody>
+                    <tfoot class="thead-light">
+                      <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                        <th scope="col">Rp. <a id="totalMemorandum">{{total_memorandum_price}}</a></th>
+                        <th scope="col">Rp. <a id="sisaBayarMemorandum">{{sisa_memorandum}}</a></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tfoot>
                   </table>
                 </div>
                 <div class="card-footer py-4">

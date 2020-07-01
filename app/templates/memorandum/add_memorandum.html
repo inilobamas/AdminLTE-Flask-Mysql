@@ -97,6 +97,12 @@
                   <nav aria-label="...">
                     <ul class="pagination justify-content-end mb-0">
                       <li class="page-item active">
+                         <div class="form-group" id="payment">
+                            <input type="radio" id="lunas" name="payment" value="lunas" checked="checked">
+                            <label for="lunas">Lunas</label><br>
+                            <input type="radio" id="hutang" name="payment" value="hutang">
+                            <label for="hutang">Hutang</label><br>
+                        </div>
                         <button onclick="SaveMemorandum()" type="button" class="btn btn-primary"><a>Proses</a></button>
                       </li>
                     </ul>
@@ -214,8 +220,21 @@
         var user_id = $('#addUserMemorandum').val()
         var description = $('#addDescriptionMemorandum').val()
         var date = $('#addDateMemorandum').val()
+
+        var totalAmount = document.getElementById("totalAmountMemorandum").text;
+        console.log("totalAmount", totalAmount)
+
         var totalMemorandum = document.getElementById("totalMemorandum").text;
         totalMemorandum = totalMemorandum.replace(/\./g,'')
+
+        var status = 0;
+        if (document.getElementById('lunas').checked) {
+          status = 1
+        } else {
+          status = 2
+        }
+
+        console.log("status", status)
 
         <!--    Inserting Table    -->
         $.ajax({
@@ -225,7 +244,11 @@
                 user_id: user_id,
                 description: description,
                 date: date,
-                detailMemorandum: listDetailMemorandum
+                status: status,
+                total_price: totalMemorandum,
+                total_amount: parseInt(totalAmount),
+                detailMemorandum: listDetailMemorandum,
+                total_remaining: 0
             }),
             contentType: "application/json; charset=utf-8",
             type: 'POST',

@@ -1,7 +1,7 @@
 from flask import render_template, redirect, request, url_for, flash
 from . import memorandum
 from .forms import SearchForm
-from app.models import Memorandum, User, CategoryProduct, Product, DetailMemorandum
+from app.models import Memorandum, User, CategoryProduct, Product, DetailMemorandum, UserAccount, Stock, DetailStock
 from flask_login import login_required, current_user
 from peewee import MySQLDatabase, JOIN
 from conf.config import config
@@ -35,14 +35,12 @@ def functionGetMemorandum():
     return render_template('memorandum/list_memorandum.html', current_user=current_user, form=form, len_list=len(memorandum), list_memorandum=memorandum)
 
 # Get Latest Memorandum Code
-# @memorandum.route('/getMemorandumCode', methods=['POST'])
-# @login_required
 def functionGetMemorandumCode():
     # Get User By ID
     memorandum = Memorandum.select().order_by(Memorandum.id.desc()).first()
 
     memorandum_code = "1"
-    if memorandum_code != None:
+    if memorandum != None:
         memorandum_code = str(memorandum.id + 1)
 
     product_code = "NJL-" + memorandum_code.zfill(6) # NBL = Nota Beli NJL = Nota Jual NPP = Nota Pelunasan Pembayaran
@@ -104,21 +102,58 @@ def functionInsertMemorandumAndDetailMemorandum():
     }
 
     data = request.get_json()
+    data_user_id = data['user_id']
     detailMemorandum = data['detailMemorandum']
     memorandumCode = functionGetMemorandumCode()
 
     if detailMemorandum:
         try:
+            print("data['status']", data['status'] == 1)
+            status_memo = False
+            if data['status'] == 1:
+                status_memo = True
+            else:
+                data['total_remaining'] = data['total_price']
+
             result_memorandum = Memorandum.insert(
                 memo_number=memorandumCode,
                 memo_date=datetime.datetime.now(),
-                user_id=data['user_id'],
+                memo_end_date=datetime.datetime.now() + datetime.timedelta(days=30),
+                user_id=data_user_id,
                 description=data['description'],
-                total=0,
-                status=1,
+                total_amount=data['total_amount'],
+                total_price=data['total_price'],
+                total_remaining=data['total_remaining'],
+                status=data['status'],
                 created_by=current_user.id,
                 created_at=datetime.datetime.now()
             ).execute()
+
+            try:
+                if status_memo:
+                    UserAccount.insert(
+                        user_id=data_user_id,
+                        memo_id=result_memorandum,
+                        debit=0,
+                        credit=0,
+                        balance=0,
+                        created_by=current_user.id,
+                        created_at=datetime.datetime.now()
+                    ).execute()
+                else:
+                    UserAccount.insert(
+                        user_id=data_user_id,
+                        memo_id=result_memorandum,
+                        debit=0,
+                        credit=data['total_price'],
+                        balance=data['total_remaining'],
+                        created_by=current_user.id,
+                        created_at=datetime.datetime.now()
+                    ).execute()
+            except Exception as e:
+                row['status'] = "danger"
+                row['message'] = "Failed to Insert User Account"
+                return row
 
             for data in detailMemorandum:
                 DetailMemorandum.insert(
@@ -129,6 +164,39 @@ def functionInsertMemorandumAndDetailMemorandum():
                     created_by=current_user.id,
                     created_at=datetime.datetime.now()
                 ).execute()
+
+                try:
+                    stock = Stock.select().where(Stock.product_id == data['product_id'])
+                    amount_remaining = stock[0].amount - int(data['amount'])
+
+                    query_stock_update = Stock.update(
+                        amount=amount_remaining,
+                        updated_by=current_user.id,
+                        updated_at=datetime.datetime.now()
+                    )
+                    query_stock_update.where(Stock.product_id == data['product_id']).execute()
+                except Exception as e:
+                    print("Except Update Stock", e)
+                    row['status'] = "danger"
+                    row['message'] = "Failed to Update Stock"
+                    return row
+
+                try:
+                    DetailStock.insert(
+                        stock_id=stock[0].id,
+                        user_id=data_user_id,
+                        amount_in=0,
+                        amount_out=data['amount'],
+                        amount_balance=amount_remaining,
+                        start_date=datetime.datetime.now(),
+                        created_at=datetime.datetime.now(),
+                        created_by=current_user.id
+                    ).execute()
+                except Exception as e:
+                    print("Except Insert Detail Stock", e)
+                    row['status'] = "danger"
+                    row['message'] = "Failed to Insert Detail Stock"
+                    return row
 
             row['status'] = "success"
             row['message'] = "Successfully Inserted"

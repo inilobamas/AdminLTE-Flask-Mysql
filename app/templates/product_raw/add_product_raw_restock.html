@@ -1,0 +1,297 @@
+{% extends "base_site.html" %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include "site_template/navigation.html" %}
+
+  {% include "site_template/top-stats.html" %}
+
+    <div class="container-fluid mt--7">
+
+      <!-- Table -->
+      <div class="row">
+            <div class="col">
+
+            <div class="" role="alert" id="alert_user">
+            </div>
+
+              <div class="card shadow">
+                <div class="card-header border-0">
+                    <h3 class="mb-0"><a href="/product_raw">Produk Mentah</a> - Restok Produk</h3>
+                </div>
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                      <div class="card-body border-0">
+                        <a id="productRawID" style="display:none">{{productRaw.id}}</a>
+                        <h4 class="mb-0" id="addCodeProductRaw"><a href="#">Kode Produk Mentah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{productRaw.product_raw_code}}</h4>
+                        <br>
+                        <h4 class="mb-0" id="addNameProductRaw"><a href="#">Nama Produk Mentah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{productRaw.product_raw_name}}</h4>
+                        <br>
+                        <h4 class="mb-0" id="addDateMemorandum"><a href="#">Tanggal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</a> {{timeNow}}</h4>
+                        <br>
+                        <div class="form-group">
+                            <h4 class="mb-0"><a href="#">Keterangan&nbsp;:&nbsp;</a></h4>
+                            <br>
+                            <textarea class="form-control" id="addDescriptionProductRaw"></textarea>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div style="margin-left:1%" class="form-group">
+                    <!--                  onclick="GetProductCode()"-->
+                    <a data-toggle="modal" data-target="#addModalMemorandum"> <button type="button" class="btn btn-sm btn-primary">Tambah Item <i class="ni ni-fat-add text-white"></i></button></a>
+                  </div>
+
+                  <table class="table align-items-center table-flush" id="memorandumTable">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col" style="display:none;">Produk ID</th>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Produk</th>
+                        <th scope="col">Nama Produk</th>
+                        <th scope="col">Jumlah</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="memorandumTableTbody">
+                    <!--          Start List          -->
+                    <!-- For loop logic of jinja template -->
+                    <!--  Use function  -->
+                    <!--          End List          -->
+
+                    </tbody>
+                    <tfoot class="thead-light">
+                      <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                          <th scope="col"><a id="totalAmountMemorandum">0</a> kg</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="card-footer py-4">
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end mb-0">
+                      <li class="page-item active">
+                        <button onclick="SaveMemorandum()" type="button" class="btn btn-primary"><a>Proses</a></button>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% include "site_template/footer.html" %}
+    </div>
+
+<!-- Add Modal Memorandum -->
+<div class="modal fade" id="addModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="addModalMemorandumLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Tutup</span>
+                </button>
+                <h4 class="modal-title" id="addModalMemorandumLabel">Tambah Produk</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="recipient-category-product" class="control-label">Nama Produk:</label>
+                        <select class="form-control" id="addProductDetailMemorandum">
+                            <option value="pilih" selected>Pilih</option>
+
+                            {%for i in range(0, len_product)%}
+                                {% if list_product[i].stock_amount != None %}
+                                    <option value="{{list_product[i].product_id}}">{{list_product[i].category_product_name}}-{{list_product[i].product_name}} {{list_product[i].stock_amount}}</option>
+                                {% else %}
+                                    <option value="{{list_product[i].product_id}}">{{list_product[i].category_product_name}}-{{list_product[i].product_name}} 0</option>
+                                {% endif %}
+                            {%endfor%}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-amount" class="control-label">Jumlah (per kg):</label>
+                        <input class="form-control" id="addAmountDetailMemorandum"></input>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button onclick="InsertMemorandum()" type="button" id="btnAddMemorandum" class="btn btn-primary">Tambah</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal Memorandum -->
+<div class="modal fade" id="deleteModalMemorandum" tabindex="-1" role="dialog" aria-labelledby="deleteModalMemorandumLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+<!--            <div class="modal-header" style="text-align:center;">-->
+<!--                <h4 class="modal-title" style="color:red;" id="deleteModalUserLabel">Apa anda yakin menghapus data ini?</h4>-->
+<!--            </div>-->
+                <div class="card-header border-0">
+                  <h3 class="mb-0" id="deleteModalProductLabel">Apa anda yakin menghapus data ini?</h3>
+                </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" onclick="DeleteMemorandum()">Hapus</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+#left
+{
+    width:10%;
+    float:left;
+}
+#right
+{
+    width:90%;
+    float:right;
+}
+</style>
+<script>
+    function SaveMemorandum(){
+        var array = [];
+        console.log("array", array)
+        var headers = [];
+        console.log("headers", headers)
+        $('#memorandumTable th').each(function(index, item) {
+            headers[index] = $(item).html();
+        });
+        $('#memorandumTable tr').has('td').each(function() {
+            var arrayItem = {};
+            $('td', $(this)).each(function(index, item) {
+                arrayItem[headers[index]] = $(item).html();
+            });
+            array.push(arrayItem);
+        });
+
+        var listDetailMemorandum = [];
+        var i;
+        for (i = 0; i < array.length; i++) {
+          var product_id = array[i]["Produk ID"]
+          console.log("product_id", product_id)
+          var amount = array[i]["Nama Produk"]
+          console.log("amount", amount)
+
+           <!--      TODO: MASUKKAN MEMORANDUM      -->
+          var arrayDetailMemorandum = {
+            "product_id": product_id,
+            "amount": amount
+          }
+
+          listDetailMemorandum.push(arrayDetailMemorandum)
+        }
+
+        var productRawID = document.getElementById("productRawID").text;
+        var productRawDescription = document.getElementById("addDescriptionProductRaw").value;
+        console.log("productRawID", productRawID);
+        <!--    Inserting Table    -->
+        $.ajax({
+            url: '/insertDetailProductRaw',
+            data: JSON.stringify({
+                productRawID: parseInt(productRawID),
+                productRawDescription: productRawDescription,
+                detailMemorandum: listDetailMemorandum
+            }),
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            success: function(res) {
+                console.log("res product raw restock", res);
+
+                // Re populate the grid
+                setTimeout(function(){
+                    window.location.href = "/product_raw";
+                 }, 1000);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        })
+    }
+
+    function ChangeProduct(){
+        var addCategoryProduct = document.getElementById("addCategoryProduct").value;
+    }
+
+    function ConfirmDeleteMemorandum(elm){
+        localStorage.setItem('deleteMemorandumRow', elm);
+        $('#deleteModalMemorandum').modal();
+    }
+
+    function DeleteMemorandum() {
+        elm = localStorage.getItem('deleteMemorandumRow')
+
+        var count = document.getElementById("span_number_memorandum");
+        $(".span_number_memorandum").each(function (i){
+            $(this).text(i+1);
+        });
+
+        var amount = $(".trItem .amount")[elm].innerText.replace("kg", '');
+
+        var totalAmountMemorandum = document.getElementById("totalAmountMemorandum").text;
+
+
+        totalAmountMemorandum = parseInt(totalAmountMemorandum) - parseInt(amount)
+        document.getElementById("totalAmountMemorandum").text = totalAmountMemorandum
+
+
+        document.getElementById("memorandumTableTbody").deleteRow(elm);
+        $('#deleteModalMemorandum').modal('hide');
+    }
+
+    function InsertMemorandum() {
+        var count = document.getElementById("memorandumTableTbody").getElementsByTagName("tr").length;
+        var number = count + 1;
+
+        var product_id = $('#addProductDetailMemorandum').val();
+        var amount = $('#addAmountDetailMemorandum').val();
+        $.ajax({
+            url : '/getDetailProductByID',
+            data : {id:product_id},
+            type : 'POST',
+            success: function(res){
+                var newTr = '<tr class="trItem"><td id="idMemorandum" style="display:none">' + res.product_id + '</td><th scope="row"><div class="media align-items-center"><div class="media-body"><span class="span_number_memorandum" class="mb-0 text-sm">' + number + '</span></div></div></th><td>' + res.product_code + '</td><td>' + res.product_name + '</td><td class="amount">' + amount + '</td><td class="text-right"><button type="button" class="btn btn-sm btn-primary"><a onclick="ConfirmDeleteMemorandum('+count+')" data-toggle="modal" data-id=this data-target="#deleteModalMemorandum">Hapus</a></button></td></tr>';
+
+                $('#memorandumTable').append(newTr);
+                $('#addModalMemorandum').modal('hide');
+
+                var totalAmountMemorandum = document.getElementById("totalAmountMemorandum").text;
+
+                totalAmountMemorandum = parseInt(totalAmountMemorandum) + parseInt(amount)
+                document.getElementById("totalAmountMemorandum").text = totalAmountMemorandum
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+    }
+</script>
+</style>
+
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super() }}
+
+{% endblock javascripts %}
